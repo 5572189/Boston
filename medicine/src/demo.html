@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html>
-
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <!-- flexible.js 建议做内联处理，请勿移动位置 -->
+    <script src="assets/plugins/lib-flexible/flexible.js"></script>
+    <title>首页</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/plugins/swiper/swiper.min.css">
+    <link rel="stylesheet" href="assets/plugins/swiper/animate.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Swiper中文网基础演示(www.swiper.com.cn)</title>
-    <link rel="stylesheet" href="assets/plugins/swiper/swiper.min.css">
-    <link rel="stylesheet" href="assets/plugins/swiper/animate.min.css">
+
     <style>
         * {
             margin: 0;
             padding: 0;
         }
-        .swiper-container{
-            position: fixed;
-            width: 100%;
-            height: 100%;
-        }
-        .blue-slide {
-            background: #4390EE;
-        }
 
-        .red-slide {
-            background: #CA4040;
-        }
-
-        .orange-slide {
-            background: #FF8604;
-        }
-
-        .swiper-slide {
-            line-height: 300px;
-            color: #fff;
-            font-size: 36px;
-            text-align: center;
-        }
     </style>
 </head>
 
 <body>
-    <div class="swiper-container">
+    <div class="layout_swiper_box swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide blue-slide">
-                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
-                    swiper-animate-delay="0.3s">从下往上出现的内容</p>
+            <div class="swiper-slide one-slide">
+                    <div  class="logo" >
+                        <img class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s"
+                    swiper-animate-delay="0.3s"src="assets/imgs/logo.png" alt="">
+                    </div>
+                    <div class="ani title" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s"
+                    swiper-animate-delay="0.5s">
+                        <img src="assets/imgs/one_01.png" alt="">
+                    </div>
+                    <div class="scan_box">
+                        <div class="qr-scanner">
+                            <div class="line"></div>
+                        </div>
+                    </div>
             </div>
             <div class="swiper-slide red-slide">
                 <p class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s"

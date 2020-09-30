@@ -14,28 +14,65 @@ body {
   background-size: 100% 100%;
 }
 
-.qr-scanner {
-  background-image: linear-gradient(0deg, transparent 24%, rgba(32, 255, 77, 0.1) 25%, rgba(32, 255, 77, 0.1) 26%, transparent 27%, transparent 74%, rgba(32, 255, 77, 0.1) 75%, rgba(32, 255, 77, 0.1) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(32, 255, 77, 0.1) 25%, rgba(32, 255, 77, 0.1) 26%, transparent 27%, transparent 74%, rgba(32, 255, 77, 0.1) 75%, rgba(32, 255, 77, 0.1) 76%, transparent 77%, transparent);
-  background-size: 3rem 3rem;
-  background-position: -1rem -1rem;
+.layout_swiper_box {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  max-width: 10rem;
   width: 100%;
   height: 100%;
-  position: relative;
-  background-color: #111;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
-.qr-scanner .box {
-  width: 75vw;
-  height: 75vw;
-  max-height: 75vh;
-  max-width: 75vh;
+.layout_swiper_box .one-slide {
+  background: #a2a8ac;
+}
+
+.layout_swiper_box .one-slide .logo {
   position: relative;
+  width: 100%;
+  height: 2.306667rem;
+  background: url(../imgs/logo_bg.png) no-repeat;
+  background-size: 100% 2.306667rem;
+}
+
+.layout_swiper_box .one-slide .logo img {
+  display: block;
+  position: absolute;
+  right: 0.4rem;
+  top: 0.8rem;
+  width: 2.16rem;
+  height: 1rem;
+}
+
+.layout_swiper_box .one-slide .title {
+  margin-left: 0.533333rem;
+}
+
+.layout_swiper_box .one-slide .title img {
+  width: 7.12rem;
+  height: 1.013333rem;
+}
+
+.layout_swiper_box .one-slide .scan_box {
+  position: absolute;
   left: 50%;
   top: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  width: 5.866667rem;
+  height: 7.733333rem;
+  margin-left: -2.933333rem;
+  margin-top: -3.866667rem;
+  background: url(../imgs/scan_box_bg.png) no-repeat;
+  background-size: contain;
+}
+
+.qr-scanner {
+  position: relative;
+  width: 97%;
+  height: 99%;
+  margin: auto;
   overflow: hidden;
-  border: 0.1rem solid rgba(0, 255, 51, 0.2);
 }
 
 .qr-scanner .line {
@@ -48,42 +85,6 @@ body {
   animation: radar-beam 2s infinite;
   animation-timing-function: cubic-bezier(0.53, 0, 0.43, 0.99);
   animation-delay: 1.4s;
-}
-
-.qr-scanner .box:after,
-.qr-scanner .box:before,
-.qr-scanner .angle:after,
-.qr-scanner .angle:before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 3vw;
-  height: 3vw;
-  border: 0.2rem solid transparent;
-}
-
-.qr-scanner .box:after,
-.qr-scanner .box:before {
-  top: 0;
-  border-top-color: #1adbfc;
-}
-
-.qr-scanner .angle:after,
-.qr-scanner .angle:before {
-  bottom: 0;
-  border-bottom-color: #1adbfc;
-}
-
-.qr-scanner .box:before,
-.qr-scanner .angle:before {
-  left: 0;
-  border-left-color: #1adbfc;
-}
-
-.qr-scanner .box:after,
-.qr-scanner .angle:after {
-  right: 0;
-  border-right-color: #1adbfc;
 }
 
 @keyframes radar-beam {
