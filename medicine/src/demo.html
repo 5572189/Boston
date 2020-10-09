@@ -57,6 +57,7 @@
             </div>
         </div>
     </div>
+    <script src="assets/plugins/jq/jquery.min.js"></script>
     <script src="assets/plugins/swiper/swiper.min.js"></script>
     <script src="assets/plugins/swiper/swiper.animate.min.js"></script>
     <script type="text/javascript">
@@ -68,9 +69,16 @@
                 },
                 slideChangeTransitionEnd: function () {
                     swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                    this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); // 动画只展现一次，去除ani类名
                 }
             }
         });
+         $('.logo').click(function () {
+            mySwiper.slideTo(2, 1000, false);//切换到第一个slide，速度为1秒
+            swiperAnimateCache(mySwiper);
+            swiperAnimate(mySwiper);
+         })
+
     </script>
 </body>
 
