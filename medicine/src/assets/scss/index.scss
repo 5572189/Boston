@@ -9,7 +9,7 @@
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    background: url(../imgs/bg.png) no-repeat;
+    background: url(../imgs/one-swiper/bg.png) no-repeat;
     background-size: 100% 100%;
  }
 .layout_swiper_box{
@@ -21,12 +21,219 @@
     height: 100%;
     transform: translateX(-50%);
     .one-slide{
+        position: relative;
+        background: url(../imgs/one-swiper/bg_01.png) no-repeat;
+        background-size: 100% 100%;
+        overflow: hidden;
+        .loading{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform:translate(-50%,-50%);
+            height: 190px;
+            img{
+                width: 661px;
+                height: 102px;
+            }
+            p{
+                margin-top: 30px;
+                font-size: 35px;
+                text-align: center;
+                color: #fff;
+                font-family: 'DIN-Bold';
+            }
+        }
+        .fingerprint_box{
+            display: none;
+            position: absolute;
+            left: 50%;
+            top: 60%;
+            transform:translate(-50%, -50%);
+            width: 357px;
+            .logo_img{
+                display: block;
+                width: 357px;
+                height: 161px;
+            }
+            .fingerprint_img{
+                display: block;
+                width: 197px;
+                height: 197px;
+                margin: 100px auto 30px;
+                animation: flicker-1 2s linear infinite both;
+            }
+            .fingerprint_title{
+                display: block;
+                width: 128px;
+                height: 72px;
+                margin: 0 auto;
+            }
+        }
+        .bubble_box{
+            .bubble{
+                filter: blur(20px) grayscale(1); /*no*/
+            }
+            .bubble_01{
+                position: absolute;
+                left: 430px;
+                top: -120px;
+                width: 244px;
+                height: 229px;
+                transform: scale(0.8);
+            }
+            .bubble_01.on {
+                animation: bubble-01 5s 1 ease-in;
+                animation-fill-mode: forwards;
+            }
+            .bubble_02{
+                position: absolute;
+                right: 170px;
+                top: 400px;
+                width: 107px;
+                height: 111px;
+                transform: scale(0.8);
+            }
+            .bubble_02.on {
+                animation: bubble-02 5s 1 ease-in;
+                animation-fill-mode: forwards;
+            }
+            .bubble_03{
+                position: absolute;
+                top: 240px;
+                left: -140px;
+                width: 251px;
+                height: 261px;
+                transform: scale(0.8);
+            }
+            .bubble_03.on {
+                animation: bubble-03 5s 1 ease-in;
+                animation-fill-mode: forwards;
+            }
+            .bubble_04{
+                position: absolute;
+                top: 150px;
+                left: 120px;
+                width: 123px;
+                height: 127px;
+            }
+            .bubble_04.on {
+                animation: bubble-04 5s 1 ease-in;
+                animation-fill-mode: forwards;
+            }
+            .bubble_05{
+                position: absolute;
+                right: -150px;
+                top: 188px;
+                width: 314px;
+                height: 324px;
+                transform: scale(0.5);
+            }
+            .bubble_05.on {
+                animation: bubble-05 5s 1 ease-in;
+                animation-fill-mode: forwards;
+            }
+            .bubble_06{
+                position: absolute;
+                top: 652px;
+                right: -150px;
+                width: 305px;
+                height: 318px;
+                transform: scale(0.5);
+            }
+            .bubble_06.on {
+                animation: bubble-06 5s 1 ease-in;
+                animation-fill-mode: forwards;
+            }
+            .bubble_07{
+                position: absolute;
+                left: -140px;
+                top: 740px;
+                width: 244px;
+                height: 254px;
+                transform: scale(0.8);
+            }
+            .bubble_07.on {
+                animation: bubble-07 5s 1 ease-in;
+                animation-fill-mode: forwards;
+            }
+            .bubble_08{
+                position: absolute;
+                bottom: 50px;
+                left: -160px;
+                width: 283px;
+                height: 254px;
+                transform: scale(0.8);
+            }
+            .bubble_08.on {
+                animation: bubble-08 5s 1 ease-in;
+                animation-fill-mode: forwards;
+            }
+            .bubble_09{
+                position: absolute;
+                right: -290px;
+                bottom: 100px;
+                width: 438px;
+                height: 422px;
+                transform: scale(0.8);
+            }
+            .bubble_09.on {
+                animation: bubble-09 5s 1 ease-in;
+                animation-fill-mode: forwards;
+            }
+            .bubble_10{
+                position: absolute;
+                bottom: 115px;
+                left: 195px;
+                width: 155px;
+                height: 144px;
+            }
+            .bubble_10.on {
+                animation: bubble-10 5s 1 ease-in;
+                animation-fill-mode: forwards;
+            }
+            .bubble_11{
+                position: absolute;
+                left: 300px;
+                bottom: -200px;
+                width: 300px;
+                height:306px;
+                transform: scale(0.8);
+            }
+            .bubble_11.on {
+                animation: bubble-11 5s 1 ease-in;
+                animation-fill-mode: forwards;
+            }
+        }
+        .bubble_title{
+            .logo_bg_title{
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 173px;
+            }
+            .bubble_title {
+                display: none;
+                position: absolute;
+                left: 50px;
+                top: 45%;
+                transform: translateY(-50%);
+                width: 564px;
+                height: 162px;
+            }
+        }
+        .next{
+            display: none;
+        }
+    }
+    .two-slide{
         background: #a2a8ac;
         .logo{
             position: relative;
             width: 100%;
             height: 173px;
-            background: url(../imgs/logo_bg.png) no-repeat;
+            background: url(../imgs/one-swiper/logo_bg.png) no-repeat;
             background-size: 100% 173px;
             img{
                 display: block;
@@ -52,7 +259,7 @@
             height: 580px;
             margin-left: -220px;
             margin-top: -290px;
-            background: url(../imgs/scan_box_bg.png) no-repeat;
+            background: url(../imgs/one-swiper/scan_box_bg.png) no-repeat;
             background-size: contain;
             .scan_center{
                 width: 100%;
@@ -82,7 +289,7 @@
 .qr-scanner .line {
     height: 100%;
     width: 100%;
-    // background: url(../imgs/scan_line.png) no-repeat;
+    // background: url(../imgs/one-swiper/scan_line.png) no-repeat;
     // background-size: cover;
     background-position: bottom;
     background: linear-gradient(180deg, rgba(0, 255, 51, 0) 43%, #1adbfc 211%);
@@ -92,6 +299,147 @@
     animation-timing-function: cubic-bezier(0.53, 0, 0.43, 0.99);
     animation-delay: 1.4s;
 }
+.next{
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+    animation: flicker-1 2s linear infinite;
+    img{
+        width: 173px;
+        height: 50px;
+    }
+}
+@keyframes bubble-01{
+    from{
+        left: 430px;
+        top: -120px;
+    }
+    to{
+        left: 140px;
+        top: 160px;
+        transform: scale(1);
+    }
+}
+@keyframes bubble-02 {
+    from {
+        right: 170px;
+        top: 400px;
+    }
+
+    to {
+        right: 240px;
+        top: 160px;
+        transform: scale(1);
+    }
+}
+@keyframes bubble-03 {
+    from{
+        top: 240px;
+        left: -140px;
+    }
+    to {
+        top: 300px;
+        left: -80px;
+        transform: scale(1);
+    }
+}
+@keyframes bubble-04 {
+    from {
+        top: 150px;
+        left: 120px;
+    }
+
+    to {
+        top: 435px;
+        left: 270px;
+        transform: scale(1);
+    }
+}
+@keyframes bubble-05 {
+    from {
+        right: -150px;
+        top: 188px;
+    }
+
+    to {
+        right: -50px;
+        top: 250px;
+        transform: scale(1);
+    }
+}
+@keyframes bubble-06 {
+    from {
+        top: 652px;
+        right: -150px;
+    }
+
+    to {
+        top: 600px;
+        right: -140px;
+        transform: scale(1);
+    }
+}
+@keyframes bubble-07 {
+    from {
+        left: -140px;
+        top: 740px;
+    }
+
+    to {
+        left: 130px;
+        top: 830px;
+        transform: scale(1);
+    }
+}
+@keyframes bubble-08 {
+    from {
+        bottom: 50px;
+        left: -160px;
+    }
+
+    to {
+        bottom: 90px;
+        left: -90px;
+        transform: scale(1);
+    }
+}
+@keyframes bubble-09 {
+    from {
+        right: -290px;
+        bottom: 100px;
+    }
+
+    to {
+        right: -80px;
+        bottom: 140px;
+        transform: scale(0.8);
+    }
+}
+@keyframes bubble-10 {
+    from {
+        bottom: 115px;
+        left: 195px;
+    }
+
+    to {
+        right: -40px;
+        bottom: 225px;
+        transform: scale(1);
+    }
+}
+@keyframes bubble-11 {
+    from {
+        left: 300px;
+        bottom: -200px;
+    }
+
+    to {
+        left: 185px;
+        bottom: -80px;
+    }
+}
+
+
 
 
 @keyframes radar-beam {
@@ -101,5 +449,17 @@
 
     100% {
         transform: translateY(0);
+    }
+}
+@keyframes flicker-1 {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    42% {
+        opacity: 0.2;
+    }
+    60% {
+        opacity: 1;
     }
 }
