@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body,
 p,
 h1,
@@ -48,5 +50,50 @@ html {
 
 body {
   font-family: 'Microsoft YaHei', Arial;
+}
+
+@font-face {
+  font-family: '兰亭粗黑GBK';
+  src: url("../fonts/兰亭粗黑GBK.TTF");
+}
+
+@font-face {
+  font-family: '兰亭纤黑GBK';
+  src: url("../fonts/兰亭纤黑GBK.TTF");
+}
+
+@font-face {
+  font-family: '兰亭细黑GBK-Mobil';
+  src: url("../fonts/兰亭细黑GBK-Mobil.TTF");
+}
+
+@font-face {
+  font-family: '兰亭细黑GBK';
+  src: url("../fonts/兰亭细黑GBK.TTF");
+}
+
+@font-face {
+  font-family: '兰亭黑GBK';
+  src: url("../fonts/兰亭黑GBK.TTF");
+}
+
+@font-face {
+  font-family: 'DIN-Black';
+  src: url("../fonts/DIN-Black.otf");
+}
+
+@font-face {
+  font-family: 'DIN-Bold';
+  src: url("../fonts/DIN-Bold.otf");
+}
+
+@font-face {
+  font-family: 'DIN-Light';
+  src: url("../fonts/DIN-Light.otf");
+}
+
+@font-face {
+  font-family: 'DIN-Medium';
+  src: url("../fonts/DIN-Medium.otf");
 }
 /*# sourceMappingURL=global.css.map */
