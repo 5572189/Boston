@@ -50,7 +50,7 @@
                 root: 'src/',
                 scss: 'src/assets/scss/',
                 styles: 'src/assets/css/',
-                scripts: 'src/assets/js/',
+                scripts: 'src/assets/scripts/',
                 images: 'src/assets/imgs/',
                 fonts: 'src/assets/fonts/',
                 plugins: 'src/assets/plugins/'
@@ -58,7 +58,7 @@
             build: {
                 root: 'build/',
                 styles: 'build/assets/css/',
-                scripts: 'build/assets/js/',
+                scripts: 'build/assets/scripts/',
                 images: 'build/assets/imgs/',
                 fonts: 'build/assets/fonts/',
                 plugins: 'build/assets/plugins/'
