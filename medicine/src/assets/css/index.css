@@ -100,7 +100,7 @@ body {
 }
 
 .layout_swiper_box .one-slide .bubble_box .bubble_01.on {
-  animation: bubble-01 5s 1 ease-in;
+  animation: bubble-01 3s 1 ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -115,7 +115,7 @@ body {
 }
 
 .layout_swiper_box .one-slide .bubble_box .bubble_02.on {
-  animation: bubble-02 5s 1 ease-in;
+  animation: bubble-02 3s 1 ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -130,7 +130,7 @@ body {
 }
 
 .layout_swiper_box .one-slide .bubble_box .bubble_03.on {
-  animation: bubble-03 5s 1 ease-in;
+  animation: bubble-03 3s 1 ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -143,7 +143,7 @@ body {
 }
 
 .layout_swiper_box .one-slide .bubble_box .bubble_04.on {
-  animation: bubble-04 5s 1 ease-in;
+  animation: bubble-04 3s 1 ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -158,7 +158,7 @@ body {
 }
 
 .layout_swiper_box .one-slide .bubble_box .bubble_05.on {
-  animation: bubble-05 5s 1 ease-in;
+  animation: bubble-05 3s 1 ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -173,7 +173,7 @@ body {
 }
 
 .layout_swiper_box .one-slide .bubble_box .bubble_06.on {
-  animation: bubble-06 5s 1 ease-in;
+  animation: bubble-06 3s 1 ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -188,7 +188,7 @@ body {
 }
 
 .layout_swiper_box .one-slide .bubble_box .bubble_07.on {
-  animation: bubble-07 5s 1 ease-in;
+  animation: bubble-07 3s 1 ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -203,7 +203,7 @@ body {
 }
 
 .layout_swiper_box .one-slide .bubble_box .bubble_08.on {
-  animation: bubble-08 5s 1 ease-in;
+  animation: bubble-08 3s 1 ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -218,7 +218,7 @@ body {
 }
 
 .layout_swiper_box .one-slide .bubble_box .bubble_09.on {
-  animation: bubble-09 5s 1 ease-in;
+  animation: bubble-09 3s 1 ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -231,7 +231,7 @@ body {
 }
 
 .layout_swiper_box .one-slide .bubble_box .bubble_10.on {
-  animation: bubble-10 5s 1 ease-in;
+  animation: bubble-10 3s 1 ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -246,7 +246,7 @@ body {
 }
 
 .layout_swiper_box .one-slide .bubble_box .bubble_11.on {
-  animation: bubble-11 5s 1 ease-in;
+  animation: bubble-11 3s 1 ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -275,10 +275,112 @@ body {
 }
 
 .layout_swiper_box .two-slide {
+  background: url(../imgs/two-swiper/mission_bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.layout_swiper_box .two-slide .mission_title {
+  width: 2.6rem;
+  height: 1rem;
+  margin-left: 0.733333rem;
+}
+
+.layout_swiper_box .two-slide .mission_title img {
+  display: block;
+  width: 100%;
+}
+
+.layout_swiper_box .two-slide .mission_desc {
+  margin-top: 1.066667rem;
+  margin-left: 0.733333rem;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 0.373333rem;
+  color: #fff;
+  width: 4.6rem;
+  padding: 0.4rem 0.293333rem 0.4rem 0.4rem;
+  letter-spacing: 0.026667rem;
+}
+
+.layout_swiper_box .two-slide .line {
+  margin-top: 0.4rem;
+  margin-left: 0.733333rem;
+  width: 0.88rem;
+  height: auto;
+}
+
+.layout_swiper_box .two-slide .line img {
+  display: block;
+  width: 100%;
+}
+
+.layout_swiper_box .three-slide {
+  background: url(../imgs/three-swiper/bg.png) no-repeat;
+  background-size: cover;
+}
+
+.layout_swiper_box .three-slide .title {
+  width: 6.68rem;
+  height: 1.76rem;
+  margin-left: 0.733333rem;
+}
+
+.layout_swiper_box .three-slide .title img {
+  display: block;
+  width: 100%;
+}
+
+.layout_swiper_box .three-slide .desc_box {
+  position: relative;
+}
+
+.layout_swiper_box .three-slide .desc_box .desc_01 {
+  margin-top: 1.133333rem;
+  margin-left: 0.733333rem;
+  width: 3.6rem;
+  height: 10.693333rem;
+  background: url(../imgs/three-swiper/desc_bg01.png) no-repeat;
+  background-size: contain;
+}
+
+.layout_swiper_box .three-slide .desc_box .desc_02 {
+  position: absolute;
+  right: 0.733333rem;
+  top: -0.533333rem;
+  width: 3.84rem;
+  height: 11.506667rem;
+  background: url(../imgs/three-swiper/desc_bg02.png) no-repeat;
+  background-size: contain;
+}
+
+.layout_swiper_box .three-slide .desc_box .desc_03 {
+  position: absolute;
+  left: 2.266667rem;
+  top: 5.066667rem;
+  width: 5.906667rem;
+  height: 8.12rem;
+  background: url(../imgs/three-swiper/desc_bg03.png) no-repeat;
+  background-size: contain;
+}
+
+.layout_swiper_box .three-slide .switch {
+  position: absolute;
+  left: 1.066667rem;
+  bottom: 1.733333rem;
+  width: 3.106667rem;
+  height: 3.106667rem;
+  animation: switch-scale 3s infinite;
+}
+
+.layout_swiper_box .three-slide .switch img {
+  display: block;
+  width: 100%;
+}
+
+.layout_swiper_box .four-slide {
   background: #a2a8ac;
 }
 
-.layout_swiper_box .two-slide .logo {
+.layout_swiper_box .four-slide .logo {
   position: relative;
   width: 100%;
   height: 2.306667rem;
@@ -286,7 +388,7 @@ body {
   background-size: 100% 2.306667rem;
 }
 
-.layout_swiper_box .two-slide .logo img {
+.layout_swiper_box .four-slide .logo img {
   display: block;
   position: absolute;
   right: 0.4rem;
@@ -295,16 +397,16 @@ body {
   height: 1rem;
 }
 
-.layout_swiper_box .two-slide .title {
+.layout_swiper_box .four-slide .title {
   margin-left: 0.533333rem;
 }
 
-.layout_swiper_box .two-slide .title img {
+.layout_swiper_box .four-slide .title img {
   width: 7.12rem;
   height: 1.013333rem;
 }
 
-.layout_swiper_box .two-slide .scan_box {
+.layout_swiper_box .four-slide .scan_box {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -316,18 +418,32 @@ body {
   background-size: contain;
 }
 
-.layout_swiper_box .two-slide .scan_box .scan_center {
+.layout_swiper_box .four-slide .scan_box .scan_center {
   width: 100%;
   height: 100%;
   display: -ms-flexbox;
   display: flex;
 }
 
-.layout_swiper_box .two-slide .scan_box .scan_center img {
+.layout_swiper_box .four-slide .scan_box .scan_center img {
   display: block;
   margin: auto;
   width: 5.04rem;
   height: 7.146667rem;
+}
+
+.logo_bg {
+  width: 100%;
+  height: auto;
+}
+
+.scan_box.active .scan_center img {
+  animation: brightness 10s 1;
+  animation-fill-mode: forwards;
+}
+
+.scan_box.active .qr-scanner .line {
+  animation: radar-beam 2s 4;
 }
 
 .qr-scanner {
@@ -348,7 +464,6 @@ body {
   border-bottom: 0.04rem solid #1adbfc;
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
-  animation: radar-beam 2s infinite;
   animation-timing-function: cubic-bezier(0.53, 0, 0.43, 0.99);
   animation-delay: 1.4s;
 }
@@ -363,6 +478,16 @@ body {
 .next img {
   width: 2.306667rem;
   height: 0.666667rem;
+}
+
+@keyframes switch-scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 @keyframes bubble-01 {
@@ -504,6 +629,16 @@ body {
   to {
     left: 2.466667rem;
     bottom: -1.066667rem;
+  }
+}
+
+@keyframes brightness {
+  0% {
+    filter: brightness(1);
+  }
+
+  100% {
+    filter: brightness(1.5);
   }
 }
 
