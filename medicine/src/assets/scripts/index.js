@@ -39,6 +39,13 @@ $(function(){
         bubble_load();
     }
 
+    //气泡动画结束，添加另一个动画
+    $('.bubble_box img').bind("webkitAnimationEnd", function () {
+        setTimeout(function () {
+            $('.bubble_box img').addClass("active");
+        }, 1000)
+    });
+
     // loading动画函数调用
     loading_fn(function(){
         $('.loading').fadeOut(500,function(){
@@ -58,7 +65,7 @@ $(function(){
             $('.bubble_title').delay(3000).fadeIn();
             //下一页展示
             $('.one-slide').find('.next').fadeIn(1000);
-            
+
         })
     })
     var mySwiper = new Swiper('.swiper-container', {

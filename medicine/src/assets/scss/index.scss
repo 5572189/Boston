@@ -85,6 +85,9 @@
                 animation: bubble-01 3s 1 ease-in;
                 animation-fill-mode: forwards;
             }
+            .bubble_01.active{
+                animation: bubble-01-floating 3s infinite;
+            }
             .bubble_02{
                 position: absolute;
                 right: 170px;
@@ -435,6 +438,19 @@
         left: 140px;
         top: 160px;
         transform: scale(1);
+    }
+}
+
+@keyframes bubble-01-floating {
+    0%,
+    100% {
+        left: 140px;
+        top: 160px;
+        transform: scale(1);
+    }
+    50%{
+        left: 140px;
+        top: 140px; 
     }
 }
 @keyframes bubble-02 {

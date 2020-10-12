@@ -104,6 +104,10 @@ body {
   animation-fill-mode: forwards;
 }
 
+.layout_swiper_box .one-slide .bubble_box .bubble_01.active {
+  animation: bubble-01-floating 3s infinite;
+}
+
 .layout_swiper_box .one-slide .bubble_box .bubble_02 {
   position: absolute;
   right: 2.266667rem;
@@ -500,6 +504,19 @@ body {
     left: 1.866667rem;
     top: 2.133333rem;
     transform: scale(1);
+  }
+}
+
+@keyframes bubble-01-floating {
+  0%, 100% {
+    left: 1.866667rem;
+    top: 2.133333rem;
+    transform: scale(1);
+  }
+
+  50% {
+    left: 1.866667rem;
+    top: 1.866667rem;
   }
 }
 
