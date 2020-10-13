@@ -77,10 +77,9 @@ $(function(){
             slideChangeTransitionEnd: function () {
                 swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
                 this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); // 动画只展现一次，去除ani类名
-                if (this.activeIndex == 3) {
+                if (this.slides.eq(this.activeIndex).find('.qr-scanner').length == 1) {
                     $('.scan_box').addClass('active')
                 }
-
             }
         }
     });
