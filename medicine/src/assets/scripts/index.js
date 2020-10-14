@@ -3,11 +3,17 @@ $(function(){
     // loading动画 函数
     function loading_fn(callback = function(){}) {
         var i = 0,
+            y = 100,
             span = $('.loading span');
 
         function load() {
             i++;
+            y--;
             span.text(i + '%');
+            $('.title_show').css({
+                // 'width': i+'%',
+                'clip-path': 'polygon(0% ' + y + '%, 100% ' + y + '%, 100% 100%, 0% 100%)'
+            })
             if (i == 100) {
                 window.cancelAnimationFrame(stops);
                 callback();

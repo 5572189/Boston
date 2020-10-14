@@ -35,6 +35,17 @@
                 width: 661px;
                 height: 102px;
             }
+            .loading_img{
+                position: relative;
+                .title_show {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    overflow: hidden;
+                    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+                }
+            }
+
             p{
                 margin-top: 30px;
                 font-size: 35px;
@@ -190,7 +201,7 @@
                 animation-fill-mode: forwards;
             }
             .bubble_08.active {
-                animation: bubble-08-floating 3s infinite cubic-bezier(0.3, 0.6, 0.8, 1);
+                animation: bubble-08-floating 3s infinite cubic-bezier(1, 0.8, 0.6, 0.4);
             }
             .bubble_09{
                 position: absolute;
@@ -219,7 +230,7 @@
                 animation-fill-mode: forwards;
             }
             .bubble_10.active {
-                animation: bubble-10-floating 3s infinite cubic-bezier(0.3, 0.6, 0.8, 1);
+                animation: bubble-10-floating 3s infinite cubic-bezier(0.8, 0.6, 0.4, 0.2);
             }
             .bubble_11{
                 position: absolute;
@@ -262,9 +273,35 @@
     }
 
     .two-slide{
+        position: relative;
         background: url(../imgs/two-swiper/mission_bg.jpg) no-repeat;
         background-size: cover;
-
+        overflow: hidden;
+        .meteor{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            img{
+                position: absolute;
+                top: -20rem;
+                left: 16rem;
+                width: 100%;
+                display: block;
+                animation: 5s both infinite linear meteor;
+            }
+            img:nth-of-type(2){
+                animation-delay: -1s;
+            }
+            img:nth-of-type(3) {
+                animation-delay: -3s;
+            }
+            img:nth-of-type(4) {
+                animation-delay: -7s;
+            }
+        }
         .mission_title{
             width: 195px;
             height: 75px;
@@ -275,7 +312,7 @@
             }
         }
         .mission_desc{
-            margin-top: 80px;
+            margin-top: 40px;
             margin-left: 55px;
             background: rgba(0,0,0,.4);
             font-size: 28px;
@@ -392,13 +429,13 @@
        .switch{
            position: absolute;
            left: 80px;
-           bottom: 130px;
+           bottom: 100px;
            width: 233px;
            height: 233px;
-           animation: switch-scale 3s infinite;
            img{
               display: block;
               width: 100%;
+              animation: switch-scale 3s infinite;
            }
        }
     }
@@ -406,6 +443,7 @@
     .four-slide{
         background: url(../imgs/four-swiper/bg.png) no-repeat;
         background-size: cover;
+        overflow: hidden;
         .title {
             width: 553px;
             height: 131px;
@@ -546,6 +584,19 @@
     }
 }
 
+@keyframes meteor {
+    0% {
+        -webkit-transform: translate(0, 0)
+    }
+
+    50% {
+        -webkit-transform: translate(-24rem, 30rem)
+    }
+
+    100% {
+        -webkit-transform: translate(-48rem, 60rem)
+    }
+}
 @keyframes switch-scale {
     0% ,
     100% {
