@@ -45,6 +45,8 @@ $(function(){
         bubble_load();
     }
 
+// 第一屏
+
     //气泡动画结束，添加另一个动画
     $('.bubble_box img').bind("webkitAnimationEnd", function () {
         setTimeout(function () {
@@ -84,15 +86,54 @@ $(function(){
                 swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
                 this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); // 动画只展现一次，去除ani类名
                 if (this.slides.eq(this.activeIndex).find('.qr-scanner').length == 1) {
-                    $('.scan_box').addClass('active')
+                    $('.scan_box').addClass('active');
+                    $('.organs_box img').eq(0).delay(1000).fadeIn(1500);
+                    $('.organs_box img').eq(1).delay(1400).fadeIn(1500);
+                    $('.organs_box img').eq(2).delay(1800).fadeIn(1500);
+                    $('.organs_box img').eq(3).delay(2200).fadeIn(1500);
+                    $('.organs_box img').eq(4).delay(2600).fadeIn(1500);
+                    $('.organs_box img').eq(5).delay(3000).fadeIn(1500);
+                    $('.organs_box img').eq(6).delay(3500).fadeIn(1500);
                 }
             }
         }
     });
 
-    $('.logo').click(function () {
-        mySwiper.slideTo(2, 1000, false); //切换到第一个slide，速度为1秒
-        swiperAnimateCache(mySwiper);
-        swiperAnimate(mySwiper);
+// 第二屏
+
+    // 导航点击事件
+    $('.home_nav').click(function(){
+        $('.nav_bar').show(function(){
+            $('.nav_bar_box').addClass('active');
+        })
+    });
+    // 导航关闭
+    $('.logo_close').on('click','.close',function(){
+        $('.nav_bar_box').removeClass('active');
+        $('.nav_bar').fadeOut(1000);
+    });
+    // 导航内的标题点击事件
+    $('.nav_bar_box').on('click','ul li',function(){
+        var index = $(this).index();
+        $('.nav_bar_box').removeClass('active');
+        $('.nav_bar').fadeOut(function(){
+            mySwiper.slideTo(index, 1000, false);
+            swiperAnimateCache(mySwiper);
+            swiperAnimate(mySwiper);
+        });
+    })
+
+// 第三屏
+
+    $('.switch').click(function(){
+        $('.desc_box').find('section').toggleClass('active');
+    })
+
+// 第六屏
+
+    $('.animation_click').one('click',function(){
+        $('.six-swiper-box').addClass('on');
+        $('.history_box').find('.history_line').addClass('active');
+        $('.history_box img').addClass('active');
     })
 })
