@@ -125,15 +125,74 @@ $(function(){
 
 // 第三屏
 
-    $('.switch').click(function(){
-        $('.desc_box').find('section').toggleClass('active');
+    $('.three-slide').on('click','.switch', function () {
+        if ($('.desc_box').find('section').hasClass('active')){
+
+            $('.desc_box').find('section').removeClass('active');
+            $('.desc_box').find('.desc_01 div').eq(1).fadeOut(function () {
+                $('.desc_box').find('.desc_01 div').eq(0).fadeIn();
+            })
+            $('.desc_box').find('.desc_02 div').eq(1).fadeOut(function () {
+                $('.desc_box').find('.desc_02 div').eq(0).fadeIn();
+            })
+            $('.desc_box').find('.desc_03 div').eq(1).fadeOut(function () {
+                $('.desc_box').find('.desc_03 div').eq(0).fadeIn();
+            })
+        }else{
+
+            $('.desc_box').find('section').addClass('active');
+            $('.desc_box').find('.desc_01 div').eq(0).fadeOut(function () {
+                $('.desc_box').find('.desc_01 div').eq(1).fadeIn();
+            })
+            $('.desc_box').find('.desc_02 div').eq(0).fadeOut(function () {
+                $('.desc_box').find('.desc_02 div').eq(1).fadeIn();
+            })
+            $('.desc_box').find('.desc_03 div').eq(0).fadeOut(function () {
+                $('.desc_box').find('.desc_03 div').eq(1).fadeIn();
+            })
+        }
     })
 
 // 第六屏
 
     $('.animation_click').one('click',function(){
+        $('.six-slide').css({
+            'overflow-y': 'auto'
+        })
         $('.six-swiper-box').addClass('on');
         $('.history_box').find('.history_line').addClass('active');
         $('.history_box img').addClass('active');
+    })
+
+// 第七屏
+
+    $('.seven-slide').on('click', '.switch', function () {
+        if ($('.innovation').hasClass('active')) {
+
+            $('.innovation').removeClass('active');
+            $('.innovation_box_01').find('img').eq(1).fadeOut(function () {
+                $('.innovation_box_01').find('img').eq(0).fadeIn();
+            });
+            $('.innovation_box_02').find('img').eq(1).fadeOut(function () {
+                $('.innovation_box_02').find('img').eq(0).fadeIn();
+            });
+        } else {
+
+            $('.innovation').addClass('active');
+            $('.innovation_box_01').find('img').eq(0).fadeOut(function () {
+                $('.innovation_box_01').find('img').eq(1).fadeIn();
+            });
+            $('.innovation_box_02').find('img').eq(0).fadeOut(function () {
+                $('.innovation_box_02').find('img').eq(1).fadeIn();
+            });
+        }
+    })
+
+// 第八屏
+    $('.eight-slide').on('click','.mask',function(){
+        $('.eight-slide').find('.mask').fadeOut();
+        $('.eight-slide').css({
+            'overflow-y': 'auto'
+        })
     })
 })
