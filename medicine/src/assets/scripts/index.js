@@ -76,7 +76,7 @@ $(function(){
 
         })
     })
-    var mySwiper = new Swiper('.swiper-container', {
+    var mySwiper = new Swiper('.layout_swiper_box', {
         on: {
             init: function () {
                 swiperAnimateCache(this); //隐藏动画元素
@@ -155,13 +155,16 @@ $(function(){
 
 // 第六屏
 
-    $('.animation_click').one('click',function(){
+    $('.six_animation_click').one('click',function(){
+        $('.six-swiper-box').css({
+            'position':'relative'
+        });
         $('.six-slide').css({
             'overflow-y': 'auto'
         })
         $('.six-swiper-box').addClass('on');
-        $('.history_box').find('.history_line').addClass('active');
-        $('.history_box img').addClass('active');
+        $('.six-swiper-box').find('.history_line').addClass('active');
+        $('.six-swiper-box').find('.history_box img').addClass('active');
     })
 
 // 第七屏
@@ -195,4 +198,97 @@ $(function(){
             'overflow-y': 'auto'
         })
     })
+
+// 第九屏
+
+    $('.nine_animation_click').one('click',function(){
+        $('.nine-slide-box').css({
+            'position':'relative'
+        });
+        $('.nine-slide').css({
+            'overflow-y': 'auto'
+        })
+        $('.nine-slide-box').addClass('on');
+        $('.nine-slide-box').find('.history_line').addClass('active');
+        $('.nine-slide-box').find('.history_box img').addClass('active');
+    })
+
+// 第十屏
+    var ten_swiper = new Swiper('.ten_swiper_box', {
+        direction: 'vertical',
+        slidesPerView: 2, 
+        autoHeight: true, //高度随内容变化
+        // spaceBetween: 60,
+        centeredSlides: true, 
+        on: {
+            slideChangeTransitionEnd: function(){
+                if(this.activeIndex < 3){
+                    $('.nav_list li').eq(0).addClass('active').siblings().removeClass('active');
+                }else if(this.activeIndex > 2 && this.activeIndex < 7){
+                    $('.nav_list li').eq(1).addClass('active').siblings().removeClass('active');
+                }else if(this.activeIndex == 7){
+                    $('.nav_list li').eq(2).addClass('active').siblings().removeClass('active');
+                }else if(this.activeIndex == 8){
+                    $('.nav_list li').eq(3).addClass('active').siblings().removeClass('active');
+                }else if(this.activeIndex > 8 && this.activeIndex < 12){
+                    $('.nav_list li').eq(4).addClass('active').siblings().removeClass('active');
+                }else if(this.activeIndex > 11 && this.activeIndex < 15){
+                    $('.nav_list li').eq(5).addClass('active').siblings().removeClass('active');
+                }else if(this.activeIndex == 15){
+                    $('.nav_list li').eq(6).addClass('active').siblings().removeClass('active');
+                }
+            }
+        },
+    });
+    $('.nav_list li').on('click',function(){
+        var slide = 0 , index = $(this).index(); 
+        if(index == 0){
+            slide = 0;
+        }else if(index == 1){
+            slide = 3;
+        }else if(index == 2){
+            slide = 7;
+        }else if(index == 3){
+            slide = 8;
+        }else if(index == 4){
+            slide = 9;
+        }else if(index == 5){
+            slide = 12;
+        }else if(index == 6){
+            slide = 15;
+        }
+        $(this).addClass('active').siblings().removeClass('active');
+        ten_swiper.slideTo(slide, 1000, false); 
+    })
+
+// 第十二屏
+    
+    $('.twelve-slide').on('click','.mask',function(){
+        $('.twelve-slide').find('.mask').fadeOut();
+        $('.twelve-slide').css({
+            'overflow-y': 'auto'
+        })
+    })
+
+// 第十三屏
+    new Swiper('.banner_swiper_box', {
+        slidesPerView: 2, 
+        // autoplay: 3000,
+        // loop : true,
+        speed : 1000,
+        autoplay : {
+            delay : 1000,
+            stopOnLastSlide : false,
+            disableOnInteraction : true,
+        },
+        // spaceBetween: 30,
+        centeredSlides: true, 
+    });
+    $('.thirteen-slide').on('click','.mask',function(){
+        $('.thirteen-slide').find('.mask').fadeOut();
+        $('.thirteen-slide').css({
+            'overflow-y': 'auto'
+        })
+    })
+
 })
