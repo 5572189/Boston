@@ -2261,6 +2261,625 @@ body {
           height: auto;
         }
       }
+      .content_box{
+        position: relative;
+        width: 90%;
+        margin: 50px auto;
+        div:nth-of-type(1){ 
+          position: relative;
+          min-height: 900px; 
+          img:nth-of-type(1){
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 604px;
+            height: 370px;
+            display: block; 
+            z-index: 9;
+          }
+          img:nth-of-type(2){
+            position: absolute;
+            left: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 471px;
+            height: 458px;
+            display: block; 
+          }
+          img:nth-of-type(3){
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 604px;
+            height: 272px;
+            display: block;
+            margin: 0 auto;
+            z-index: 9;
+          }
+        }
+        div:nth-of-type(2){
+          display: none;
+          position: relative;
+          min-height: 900px; 
+          img:nth-of-type(1){
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 604px;
+            height: 284px;
+            display: block; 
+            z-index: 9;
+          }
+          img:nth-of-type(2){
+            position: absolute;
+            left: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 471px;
+            height: 458px;
+            display: block; 
+          }
+          img:nth-of-type(3){
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 604px;
+            height: 369px;
+            display: block;
+            margin: 0 auto;
+            z-index: 9;
+          }
+        }
+        div:nth-of-type(3){
+          display: none;
+          position: relative;
+          min-height: 900px; 
+          img:nth-of-type(1){
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 664px;
+            height: 387px;
+            display: block; 
+            z-index: 9;
+          }
+          img:nth-of-type(2){
+            position: absolute;
+            left: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 471px;
+            height: 458px;
+            display: block; 
+          }
+          img:nth-of-type(3){
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 601px;
+            height: 277px;
+            display: block;
+            margin: 0 auto;
+            z-index: 9;
+          }
+        }
+        .more{
+          position: absolute;
+          right: 0;
+          bottom: 180px;
+          text-align: right;
+          img{
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            animation: switch-scale 3s infinite;
+          }
+          p{
+            font-family: '兰亭粗黑GBK';
+            text-align: right;
+            font-size: 28px;
+          }
+        }
+      }
+  }
+
+  .fifteen-slide{
+    position: relative;
+      background: url(../imgs/fifteen-swiper/bg_01.png) no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      .title {
+        margin-left: 40px;
+  
+        img {
+          width: 152px;
+          height: auto;
+        }
+      }
+      .content{
+        position: absolute;
+        bottom: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        text-align: right;
+        span{ 
+          font-size: 30px;
+          background: #000;
+          border-radius: 10px;
+          color: #fff;
+          padding: 10px 20px; 
+        }
+        p{
+          margin-top: 40px;
+          font-size: 28px;
+          color: #fff;
+          line-height: 50px;
+          text-align: justify;
+          padding: 10px 0;
+          border-top: 1px solid #fff;
+          border-bottom: 1px solid #fff;
+          i{
+            font-family: '兰亭粗黑GBK';
+          }
+        }
+      }
+  }
+
+  .sixteen-slide{
+    position: relative;
+      background: url(../imgs/fifteen-swiper/bg_02.png) no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      .title {
+        margin-left: 40px;
+  
+        img {
+          width: 152px;
+          height: auto;
+        }
+      }
+      .banner_box{
+        margin-top: 80px;
+        margin-left: 40px;
+        img:nth-of-type(1){
+          display: block;
+          width: 225px;
+          height: 200px;
+          margin-bottom: 30px;
+        }
+        img:nth-of-type(2){
+          display: block;
+          width: 225px;
+          height: auto;
+        }
+      }
+      .content{
+        position: absolute;
+        bottom: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        text-align: right;
+        span{ 
+          font-size: 30px;
+          background: #000;
+          border-radius: 10px;
+          color: #fff;
+          padding: 10px 20px; 
+        }
+        p{
+          margin-top: 40px;
+          font-size: 28px;
+          color: #fff;
+          line-height: 50px;
+          text-align: justify;
+          padding: 10px 0;
+          border-top: 1px solid #fff;
+          border-bottom: 1px solid #fff;
+          i{
+            font-family: '兰亭粗黑GBK';
+          }
+        }
+      }
+  }
+
+  .seventeen-slide{
+    position: relative;
+      background: url(../imgs/fifteen-swiper/bg_03.png) no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      .title {
+        margin-left: 40px;
+  
+        img {
+          width: 152px;
+          height: auto;
+        }
+      }
+      .content{
+        position: absolute;
+        bottom: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        text-align: right;
+        span{ 
+          font-size: 30px;
+          background: #000;
+          border-radius: 10px;
+          color: #fff;
+          padding: 10px 20px; 
+        }
+        p{
+          margin-top: 40px;
+          font-size: 28px;
+          color: #fff;
+          line-height: 50px;
+          text-align: justify;
+          padding: 10px 0;
+          border-top: 1px solid #fff;
+          border-bottom: 1px solid #fff;
+          i{
+            font-family: '兰亭粗黑GBK';
+          }
+        }
+      }
+  }
+
+  .eighteen-slide{
+    position: relative;
+      background: url(../imgs/eighteen-swiper/bg.png) no-repeat;
+      background-size: cover;
+      overflow: hidden;
+    .title {
+      margin-left: 40px;
+
+      img {
+        width: 514px;
+        height: auto;
+      }
+    }
+    .box_header_banner{
+      width: 90%;
+      height: 400px;
+      margin: 50px auto 0;
+      
+      .swiper-pagination-bullet{
+        width: 20px;
+        height: 20px; 
+        background: #fff;
+        margin: 0 15px;
+      }
+      .swiper-pagination-bullet-active{
+        opacity: 1;
+        background: #fff;
+      } 
+      .swiper-slide{ 
+        position: relative;
+        height: 345px;
+        img{ 
+          display: block;
+          width: 100%;
+          height: 100%; 
+        }
+        p{
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.6);
+          font-size: 30px;
+          line-height: 60px;
+          color: #fff;
+        }
+      }
+    }
+    .hint_box{
+      width: 90%;
+      margin: 40px auto;
+      img{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .content_box{
+      width: 84%;
+      padding: 20px 3%;
+      min-height: 210px;
+      margin: 40px auto;
+      background: rgba(21, 95, 129, 0.7);
+      border-radius: 10px;
+      .content_list{ 
+        
+        section{
+          display: flex;
+          justify-content: space-between;
+          align-content: center;
+        }
+        div:nth-of-type(1){
+          width: 47%;
+          height: auto;
+          img{
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        div:nth-of-type(2){
+          width: 50%;
+          img{
+            display: block;
+            width: 78px;
+            height: 69px;
+            margin: 0 auto 10px;
+          }
+          p{
+            font-size: 30px;
+            text-align: justify;
+            color: #fff;
+          }
+        }
+      }
+      .content_list:nth-of-type(2) ,
+      .content_list:nth-of-type(3){
+        display: none;
+      }
+    }
+    .content_title{
+      width: 90%;
+      margin: 20px auto;
+      ul{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        li{
+          width: 30%; 
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+          border: 1px solid #fff; /*no*/
+          border-radius: 10px;
+          color: #fff;
+          font-size: 30px;
+        }
+        .active{
+            background: #00b0da;
+        }
+      }
+    }
+  }
+
+  .nineteen-slide{
+      position: relative;
+      background: url(../imgs/nineteen-swiper/bg.png) no-repeat;
+      background-size: cover;
+      overflow: hidden;
+    .title {
+      margin-left: 40px;
+
+      img {
+        width: 514px;
+        height: auto;
+      }
+    }
+    .content_box{
+      width: 90%;
+      min-height: 320px;
+      margin: 50px auto;
+      position: relative;
+      >div:nth-of-type(2) ,
+      >div:nth-of-type(3){
+        display: none;
+      }
+      p{
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+        color: #fff;
+      }
+      &::before{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        content: "";
+        width: 101px;
+        height: 218px;
+        background: url(../imgs/nineteen-swiper/i_left.png) no-repeat;
+        background-size: contain;
+      }
+      &::after{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        content: "";
+        width: 101px;
+        height: 218px;
+        background: url(../imgs/nineteen-swiper/i_rigth.png) no-repeat;
+        background-size: contain;
+      }
+    }
+    .content_list{
+      width: 90%;
+      margin: 20px auto;
+      ul{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        li{
+          width: 30%; 
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+          border: 1px solid #fff; /*no*/
+          border-radius: 10px;
+          color: #fff;
+          font-size: 30px;
+          background: #a2a8ac;
+        }
+        .active{
+            background: #00b0da;
+        }
+      }
+    }
+  }
+
+  .twenty-slide{
+    position: relative;
+    background: #08427f; 
+    overflow: hidden;
+    .title {
+      margin-left: 40px;
+
+      img {
+        width: 171px;
+        height: auto;
+      }
+    } 
+    .layout_slide{
+      position: relative;
+    }
+    .video_box{
+      width: 90%;
+      height: 400px;
+      margin: 30px auto;
+    }
+    .content_box{
+      margin: 40px auto;
+      width: 90%;
+      height: 1409px;
+      background: url(../imgs/twenty-swiper/address_bg.png) no-repeat;
+      background-size: cover;
+      ul{
+        list-style: none;
+        width: 80%;  
+        margin-left: 100px;
+        padding-top: 50px;
+        li{
+          position: relative;
+          padding: 40px 0;
+          &::after{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: "";
+            display: block;
+            width: 60%;
+            border-bottom: 1px solid #fff;
+          }
+          p{
+            font-size: 24px;
+            color: #fff;
+            line-height: 40px;
+            font-family: '兰亭细黑GBK';
+          }
+          p:nth-of-type(1){
+            position: relative;
+            font-size: 28px;
+            font-family: '兰亭粗黑GBK';
+            &::before{
+              content: "";
+              position: absolute;
+              left: -20px;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 10px;
+              height: 10px;
+              background: #fff;
+              border-radius: 50%;
+
+            }
+            span{
+              font-family: 'DIN-Bold';
+            }
+          }
+        }
+        li:last-child{
+          &::after{
+            display: none;
+          }
+        }
+      }
+    }
+    .qr_code_box{
+      width: 90%;
+      margin: 40px auto; 
+      >div{
+        padding: 40px 0;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        background: rgba(0, 0, 0, 0.2);
+        img:nth-of-type(1){
+          width: 306px;
+          height: 142px;
+          display: block;
+          margin: 0 auto 20px;
+        }
+        p{
+          font-size: 28px;
+          color: #fff;
+          text-align: center;
+        }
+        img:nth-of-type(2){
+          width: 313px;
+          height: 313px;
+          display: block;
+          margin: 30px auto 0;
+        }
+      }
+      >div:nth-of-type(2){
+        img:nth-of-type(1){
+          width: 494px;
+          height: 93px;
+          display: block;
+          margin: 0 auto 20px;
+        }
+      }
+    }
+    .proclaim{
+      width: 90%;
+      margin: 0 auto;
+      padding-bottom: 30px;
+      p{
+        font-size: 28px;
+        text-align: justify;
+        line-height: 40px;
+        color: #fff;
+        padding-bottom: 20px;
+      }
+      img{
+        width: 307px;
+        height: 34px;
+        display: block;
+        margin: 30px auto;
+      }
+    }
+    .shade{
+      display: none;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 70%;
+        height: auto;
+      }
+    }
   }
 }
 
