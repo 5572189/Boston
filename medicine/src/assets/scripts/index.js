@@ -118,7 +118,11 @@ $(function(){
         var index = $(this).index();
         $('.nav_bar_box').removeClass('active');
         $('.nav_bar').fadeOut(function(){
-            mySwiper.slideTo(index, 1000, false);
+            if (index >= 15) {
+                mySwiper.slideTo(index + 2, 1000, false);
+            }else{
+                mySwiper.slideTo(index, 1000, false);
+            }
             swiperAnimateCache(mySwiper);
             swiperAnimate(mySwiper);
         });
@@ -217,10 +221,10 @@ $(function(){
 // 第十屏
     var ten_swiper = new Swiper('.ten_swiper_box', {
         direction: 'vertical',
-        slidesPerView: 2, 
+        slidesPerView: 2,
         autoHeight: true, //高度随内容变化
         // spaceBetween: 60,
-        centeredSlides: true, 
+        centeredSlides: true,
         on: {
             slideChangeTransitionEnd: function(){
                 if(this.activeIndex < 3){
@@ -242,7 +246,7 @@ $(function(){
         },
     });
     $('.nav_list li').on('click',function(){
-        var slide = 0 , index = $(this).index(); 
+        var slide = 0 , index = $(this).index();
         if(index == 0){
             slide = 0;
         }else if(index == 1){
@@ -259,11 +263,11 @@ $(function(){
             slide = 15;
         }
         $(this).addClass('active').siblings().removeClass('active');
-        ten_swiper.slideTo(slide, 1000, false); 
+        ten_swiper.slideTo(slide, 1000, false);
     })
 
 // 第十二屏
-    
+
     $('.twelve-slide').on('click','.mask',function(){
         $('.twelve-slide').find('.mask').fadeOut();
         $('.twelve-slide').css({
@@ -273,7 +277,7 @@ $(function(){
 
 // 第十三屏
     new Swiper('.banner_swiper_box', {
-        slidesPerView: 2, 
+        slidesPerView: 2,
         // autoplay: 3000,
         // loop : true,
         speed : 1000,
@@ -283,7 +287,7 @@ $(function(){
             disableOnInteraction : true,
         },
         // spaceBetween: 30,
-        centeredSlides: true, 
+        centeredSlides: true,
     });
     $('.thirteen-slide').on('click','.mask',function(){
         $('.thirteen-slide').find('.mask').fadeOut();
@@ -293,29 +297,29 @@ $(function(){
     })
 
 // 第十四屏
-    var more_falg = 1; 
+    var more_falg = 1;
     $('.fourteen-slide').on('click','.more_img',function(){
         if(more_falg == 1){
             $('.fourteen-slide').find('.content_box div').eq(0).fadeOut(function(){
                 $('.fourteen-slide').find('.content_box div').eq(1).fadeIn();
-            }); 
+            });
             more_falg = 2;
         }else if(more_falg == 2){
             $('.fourteen-slide').find('.content_box div').eq(1).fadeOut(function(){
                 $('.fourteen-slide').find('.content_box div').eq(2).fadeIn();
-            }); 
+            });
             more_falg = 3;
         }else if(more_falg == 3){
             $('.fourteen-slide').find('.content_box div').eq(2).fadeOut(function(){
                 $('.fourteen-slide').find('.content_box div').eq(0).fadeIn();
-            }); 
+            });
             more_falg = 1;
         }
     })
 
 
 // 第十八屏
-    new Swiper('.box_header_banner', { 
+    new Swiper('.box_header_banner', {
         slidesPerView: 'auto',
         speed : 1000,
         autoplay : {
@@ -330,19 +334,19 @@ $(function(){
     });
     $('.eighteen-slide').on('click','.content_title li',function(){
         var index = $(this).index();
-        $(this).addClass('active').siblings().removeClass('active'); 
+        $(this).addClass('active').siblings().removeClass('active');
         $('.eighteen-slide').find('.content_list').fadeOut(500)
-        $('.eighteen-slide').find('.content_list').eq(index).delay(700).fadeIn(); 
-        
+        $('.eighteen-slide').find('.content_list').eq(index).delay(700).fadeIn();
+
     })
 
 // 第十九屏
     $('.nineteen-slide').on('click','.content_list li',function(){
         var index = $(this).index();
-        $(this).addClass('active').siblings().removeClass('active'); 
+        $(this).addClass('active').siblings().removeClass('active');
         $('.nineteen-slide').find('.content_box div').fadeOut(500)
-        $('.nineteen-slide').find('.content_box div').eq(index).delay(700).fadeIn(); 
-        
+        $('.nineteen-slide').find('.content_box div').eq(index).delay(700).fadeIn();
+
     })
 
 // 第二十屏
@@ -356,7 +360,7 @@ $(function(){
         var src = $(this).find('.code').attr('src');
         $('.twenty-slide').find('.shade img').attr('src',src);
         $('.twenty-slide').find('.shade').fadeIn();
-        
+
     })
     $('.twenty-slide').on('click','.shade',function(event){
         if(event.target == $('.twenty-slide').find('.shade')[0]){
