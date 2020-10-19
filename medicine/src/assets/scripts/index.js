@@ -344,7 +344,7 @@ $(function(){
     $('.nineteen-slide').on('click','.content_list li',function(){
         var index = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');
-        $('.nineteen-slide').find('.content_box div').fadeOut(100)
+        $('.nineteen-slide').find('.content_box div').fadeOut(100);
         $('.nineteen-slide').find('.content_box div').eq(index).delay(150).fadeIn();
 
     })
