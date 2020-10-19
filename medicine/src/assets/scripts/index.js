@@ -335,8 +335,8 @@ $(function(){
     $('.eighteen-slide').on('click','.content_title li',function(){
         var index = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');
-        $('.eighteen-slide').find('.content_list').fadeOut(500)
-        $('.eighteen-slide').find('.content_list').eq(index).delay(700).fadeIn();
+        $('.eighteen-slide').find('.content_list').fadeOut(100)
+        $('.eighteen-slide').find('.content_list').eq(index).delay(150).fadeIn();
 
     })
 
@@ -344,8 +344,8 @@ $(function(){
     $('.nineteen-slide').on('click','.content_list li',function(){
         var index = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');
-        $('.nineteen-slide').find('.content_box div').fadeOut(500)
-        $('.nineteen-slide').find('.content_box div').eq(index).delay(700).fadeIn();
+        $('.nineteen-slide').find('.content_box div').fadeOut(100)
+        $('.nineteen-slide').find('.content_box div').eq(index).delay(150).fadeIn();
 
     })
 
