@@ -2173,6 +2173,17 @@ body {
     }
   }
 
+  .eleven-slide{
+    background: #092b6a;
+    .title {
+      margin-left: 40px;
+      img {
+        width: 482px;
+        height: auto;
+      }
+    }
+  }
+
   .twelve-slide {
     position: relative;
     overflow: hidden;
