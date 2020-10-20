@@ -100,4 +100,196 @@ body {
   font-family: 'DIN-Medium';
   src: url("../fonts/DIN-Medium.otf");
 }
+
+@keyframes logo_01 {
+  0% {
+    left: -100%;
+    top: -50%;
+  }
+
+  100% {
+    left: 2.066667rem;
+    top: 0;
+  }
+}
+
+@keyframes logo_02 {
+  0% {
+    left: -100%;
+    top: -50%;
+  }
+
+  100% {
+    left: 5rem;
+    top: 0;
+  }
+}
+
+@keyframes logo_03 {
+  0% {
+    left: -100%;
+    top: -60%;
+  }
+
+  100% {
+    left: 3.533333rem;
+    top: 0.6rem;
+  }
+}
+
+@keyframes logo_04 {
+  0% {
+    left: -100%;
+    top: -60%;
+  }
+
+  100% {
+    left: 5.8rem;
+    top: 0.533333rem;
+  }
+}
+
+@keyframes logo_05 {
+  0% {
+    left: -100%;
+    top: -60%;
+  }
+
+  100% {
+    left: 0.266667rem;
+    top: 0.8rem;
+  }
+}
+
+@keyframes logo_06 {
+  0% {
+    left: -100%;
+    top: -40%;
+  }
+
+  100% {
+    left: 2.133333rem;
+    top: 1.733333rem;
+  }
+}
+
+@keyframes logo_07 {
+  0% {
+    left: -100%;
+    top: -40%;
+  }
+
+  100% {
+    left: 3.733333rem;
+    top: 1.666667rem;
+  }
+}
+
+@keyframes logo_08 {
+  0% {
+    left: -100%;
+    top: -40%;
+  }
+
+  100% {
+    left: 2rem;
+    top: 2.666667rem;
+  }
+}
+
+@keyframes logo_09 {
+  0% {
+    left: -100%;
+    top: -40%;
+  }
+
+  100% {
+    left: 4.066667rem;
+    top: 2.466667rem;
+  }
+}
+
+@keyframes logo_10 {
+  0% {
+    left: -100%;
+    top: -40%;
+  }
+
+  100% {
+    left: 5.4rem;
+    top: 1.866667rem;
+  }
+}
+
+@keyframes logo_11 {
+  0% {
+    left: -100%;
+    top: -40%;
+  }
+
+  100% {
+    left: 6.2rem;
+    top: 2.933333rem;
+  }
+}
+
+@keyframes logo_12 {
+  0% {
+    left: -100%;
+    top: -40%;
+  }
+
+  100% {
+    left: 0.333333rem;
+    top: 3rem;
+  }
+}
+
+@keyframes logo_13 {
+  0% {
+    left: -100%;
+    top: -40%;
+  }
+
+  100% {
+    left: 0;
+    top: 4.4rem;
+  }
+}
+
+@keyframes logo_14 {
+  0% {
+    left: -100%;
+    top: -40%;
+  }
+
+  100% {
+    left: 1.266667rem;
+    top: 3.8rem;
+  }
+}
+
+@keyframes logo_15 {
+  0% {
+    left: -100%;
+    top: -40%;
+  }
+
+  100% {
+    left: 2.2rem;
+    top: 3.84rem;
+  }
+}
+
+@keyframes logo_16 {
+  0% {
+    left: -100%;
+    top: -40%;
+  }
+
+  100% {
+    left: 4.426667rem;
+    top: 4.466667rem;
+  }
+}
 /*# sourceMappingURL=global.css.map */

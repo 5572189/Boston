@@ -773,7 +773,7 @@ body {
 
 .layout_swiper_box .four-slide .box {
   width: 8.4rem;
-  height: 9.333333rem;
+  height: 9.6rem;
   margin: 1.2rem auto 0.266667rem;
   border: 0.013333rem solid #fff;
   overflow-x: auto;
@@ -787,7 +787,7 @@ body {
   position: relative;
   float: left;
   width: 50%;
-  height: 4.666667rem;
+  height: 4.8rem;
   overflow: hidden;
 }
 
@@ -1026,6 +1026,14 @@ body {
   color: #fff;
 }
 
+.layout_swiper_box .four-slide .data_box {
+  position: absolute;
+  bottom: 1.066667rem;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 .layout_swiper_box .four-slide .data_box div {
   width: 8.4rem;
   margin: 0 auto;
@@ -1047,27 +1055,6 @@ body {
   line-height: 0.4rem;
   font-size: 0.373333rem;
   font-style: initial;
-}
-
-.layout_swiper_box .four-slide .box::-webkit-scrollbar {
-  /*滚动条整体样式*/
-  width: 0.133333rem;
-  /*高宽分别对应横竖滚动条的尺寸*/
-  height: 0.013333rem;
-}
-
-.layout_swiper_box .four-slide .box::-webkit-scrollbar-thumb {
-  /*滚动条里面小方块*/
-  border-radius: 0.133333rem;
-  -webkit-box-shadow: inset 0 0 0.066667rem rgba(0, 0, 0, 0.2);
-  background: #1d448c;
-}
-
-.layout_swiper_box .four-slide .box::-webkit-scrollbar-track {
-  /*滚动条里面轨道*/
-  -webkit-box-shadow: inset 0 0 0.066667rem rgba(0, 0, 0, 0.2);
-  border-radius: 0.133333rem;
-  background: #fff;
 }
 
 .layout_swiper_box .five-slide {
@@ -1277,14 +1264,14 @@ body {
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(1) img:nth-of-type(1) {
   width: 4.666667rem;
   height: 4.733333rem;
-  animation-delay: 0.2s;
+  animation-delay: .2s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(1) img:nth-of-type(2) {
   margin-top: 0.8rem;
   width: 4.666667rem;
   height: 4.52rem;
-  animation-delay: 0.6s;
+  animation-delay: 1s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(1) img:nth-of-type(3) {
@@ -1292,42 +1279,42 @@ body {
   width: 4.8rem;
   height: 3.933333rem;
   margin-left: -0.133333rem;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(1) img:nth-of-type(4) {
   margin-top: 0.8rem;
   width: 4.666667rem;
   height: 4.746667rem;
-  animation-delay: 1.2s;
+  animation-delay: 3s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(1) img:nth-of-type(5) {
   margin-top: 0.8rem;
   width: 4.666667rem;
   height: 5.506667rem;
-  animation-delay: 1.6s;
+  animation-delay: 4s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(1) img:nth-of-type(6) {
   margin-top: 0.8rem;
   width: 4.666667rem;
   height: 5.426667rem;
-  animation-delay: 2s;
+  animation-delay: 5s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(1) img:nth-of-type(7) {
   margin-top: 0.8rem;
   width: 4.666667rem;
   height: 3.813333rem;
-  animation-delay: 2.2s;
+  animation-delay: 6s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(1) img:nth-of-type(8) {
   margin-top: 1.066667rem;
   width: 4.666667rem;
   height: 7.173333rem;
-  animation-delay: 2.6s;
+  animation-delay: 7s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(3) {
@@ -1341,56 +1328,56 @@ body {
   width: 4.746667rem;
   height: 5.146667rem;
   margin-top: 1.4rem;
-  animation-delay: 0.4s;
+  animation-delay: .5s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(3) img:nth-of-type(2) {
   margin-top: 0.8rem;
   width: 4.84rem;
   height: 6.266667rem;
-  animation-delay: 0.8s;
+  animation-delay: 1.5s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(3) img:nth-of-type(3) {
   margin-top: 0.8rem;
   width: 4.946667rem;
   height: 5.786667rem;
-  animation-delay: 1.4s;
+  animation-delay: 2.5s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(3) img:nth-of-type(4) {
   margin-top: 0.8rem;
   width: 4.96rem;
   height: 5.586667rem;
-  animation-delay: 1.8s;
+  animation-delay: 3.5s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(3) img:nth-of-type(5) {
   margin-top: 0.4rem;
   width: 4.946667rem;
   height: 5.026667rem;
-  animation-delay: 2.4s;
+  animation-delay: 4.5s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(3) img:nth-of-type(6) {
   margin-top: 0.8rem;
   width: 5.04rem;
   height: 3.773333rem;
-  animation-delay: 2.8s;
+  animation-delay: 5.5s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(3) img:nth-of-type(7) {
   margin-top: 0.4rem;
   width: 4.946667rem;
   height: 4.906667rem;
-  animation-delay: 3.2s;
+  animation-delay: 6.5s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box div:nth-of-type(3) img:nth-of-type(8) {
   margin-top: 0.8rem;
   width: 4.973333rem;
   height: 4.053333rem;
-  animation-delay: 3.8s;
+  animation-delay: 7.5s;
 }
 
 .layout_swiper_box .six-slide .click_box .history_box .history_line {
@@ -1416,7 +1403,7 @@ body {
 }
 
 .layout_swiper_box .six-slide .click_box .history_box .active::before {
-  animation: height 5s linear 1;
+  animation: height 8s linear 1;
   animation-fill-mode: forwards;
 }
 
@@ -1825,43 +1812,43 @@ body {
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(1) img:nth-of-type(1) {
   margin-top: 0.4rem;
   width: 4.666667rem;
-  animation-delay: 0.2s;
+  animation-delay: .2s;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(1) img:nth-of-type(2) {
   margin-top: 0.4rem;
   width: 4.68rem;
-  animation-delay: 0.6s;
+  animation-delay: 1s;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(1) img:nth-of-type(3) {
   margin-top: 0.8rem;
   width: 4.666667rem;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(1) img:nth-of-type(4) {
   margin-top: 0.8rem;
   width: 4.693333rem;
-  animation-delay: 1.4s;
+  animation-delay: 3s;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(1) img:nth-of-type(5) {
   margin-top: 0.8rem;
   width: 4.68rem;
-  animation-delay: 1.8s;
+  animation-delay: 4s;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(1) img:nth-of-type(6) {
   margin-top: 0.8rem;
   width: 4.666667rem;
-  animation-delay: 2.2s;
+  animation-delay: 5s;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(1) img:nth-of-type(7) {
   margin-top: 0.8rem;
   width: 4.666667rem;
-  animation-delay: 2.6s;
+  animation-delay: 6s;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(3) {
@@ -1874,37 +1861,37 @@ body {
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(3) img:nth-of-type(6) {
   width: 4.706667rem;
   margin-top: 0.8rem;
-  animation-delay: 2.4s;
+  animation-delay: 5.5s;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(3) img:nth-of-type(5) {
   width: 4.68rem;
   margin-top: 0.8rem;
-  animation-delay: 2s;
+  animation-delay: 4.5s;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(3) img:nth-of-type(4) {
   width: 4.786667rem;
   margin-top: 0.8rem;
-  animation-delay: 1.6s;
+  animation-delay: 3.5s;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(3) img:nth-of-type(3) {
   width: 4.733333rem;
   margin-top: 0.8rem;
-  animation-delay: 1.2s;
+  animation-delay: 2.5s;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(3) img:nth-of-type(2) {
   width: 4.68rem;
   margin-top: 1.6rem;
-  animation-delay: 0.8s;
+  animation-delay: 1.5s;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(3) img:nth-of-type(1) {
   margin-top: 1.6rem;
   width: 4.6rem;
-  animation-delay: 0.4s;
+  animation-delay: 0.8s;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box .history_line {
@@ -1930,7 +1917,7 @@ body {
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box .active::before {
-  animation: milestones 5s linear 1;
+  animation: milestones 8s linear 1;
   animation-fill-mode: forwards;
 }
 
@@ -1961,14 +1948,14 @@ body {
   float: left;
   padding: 0.066667rem 0.2rem;
   border-radius: 0.066667rem;
-  font-size: 0.4rem;
-  border: 0.013333rem solid #14648a;
-  margin-right: 0.266667rem;
-  margin-bottom: 0.266667rem;
+  font-size: 0.293333rem;
+  border: 0.013333rem solid #00479d;
+  margin-right: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 
 .layout_swiper_box .ten-slide .nav_list ul li.active {
-  background: #14648a;
+  background: #00479d;
   color: #fff;
 }
 
@@ -2009,8 +1996,8 @@ body {
   height: 0.266667rem;
   text-align: center;
   line-height: 0.266667rem;
-  color: #fff;
-  background: #000;
+  color: #000;
+  border: 0.013333rem solid #000;
   border-radius: 50%;
   font-size: 0.213333rem;
   display: inline-block;
@@ -2876,15 +2863,224 @@ body {
 }
 
 .layout_swiper_box .nineteen-slide .banner_box {
+  position: relative;
   width: 8.413333rem;
   height: 7.6rem;
   margin: 0.8rem auto 0;
 }
 
 .layout_swiper_box .nineteen-slide .banner_box img {
-  display: block;
-  width: 100%;
-  height: 100%;
+  -ms-transform: skew(-10deg, 0deg);
+  transform: skew(-10deg, 0deg);
+  box-shadow: 15px 27px 10px rgba(0, 0, 0, 0.1);
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(1) {
+  position: absolute;
+  left: -100%;
+  top: -50%;
+  width: 1.306667rem;
+  height: 1.306667rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(1).active {
+  animation: logo_01 .3s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(2) {
+  position: absolute;
+  left: -100%;
+  top: -50%;
+  width: 1.893333rem;
+  height: 0.466667rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(2).active {
+  animation: logo_02 .5s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(3) {
+  position: absolute;
+  left: -100%;
+  top: -60%;
+  width: 1.893333rem;
+  height: 0.893333rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(3).active {
+  animation: logo_03 .7s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(4) {
+  position: absolute;
+  left: -100%;
+  top: -60%;
+  width: 1.48rem;
+  height: 1.213333rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(4).active {
+  animation: logo_04 1s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(5) {
+  position: absolute;
+  left: -100%;
+  top: -60%;
+  width: 1.493333rem;
+  height: 2.093333rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(5).active {
+  animation: logo_05 .3s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(6) {
+  position: absolute;
+  left: -100%;
+  top: -40%;
+  width: 1.04rem;
+  height: 0.853333rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(6).active {
+  animation: logo_06 .7s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(7) {
+  position: absolute;
+  left: -100%;
+  top: -40%;
+  width: 0.893333rem;
+  height: 0.906667rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(7).active {
+  animation: logo_07 .5s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(8) {
+  position: absolute;
+  left: -100%;
+  top: -40%;
+  width: 1.893333rem;
+  height: 0.893333rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(8).active {
+  animation: logo_08 .6s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(9) {
+  position: absolute;
+  left: -100%;
+  top: -40%;
+  width: 1.466667rem;
+  height: 1.973333rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(9).active {
+  animation: logo_09 .8s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(10) {
+  position: absolute;
+  left: -100%;
+  top: -40%;
+  width: 1.866667rem;
+  height: 0.88rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(10).active {
+  animation: logo_10 .9s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(11) {
+  position: absolute;
+  left: -100%;
+  top: -40%;
+  width: 1.186667rem;
+  height: 0.88rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(11).active {
+  animation: logo_11 1s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(12) {
+  position: absolute;
+  left: -100%;
+  top: -40%;
+  width: 1.24rem;
+  height: 0.92rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(12).active {
+  animation: logo_12 .2s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(13) {
+  position: absolute;
+  left: -100%;
+  top: -40%;
+  width: 1.64rem;
+  height: 2.253333rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(13).active {
+  animation: logo_13 .5s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(14) {
+  position: absolute;
+  left: -100%;
+  top: -40%;
+  width: 0.906667rem;
+  height: 0.853333rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(14).active {
+  animation: logo_14 .4s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(15) {
+  position: absolute;
+  left: -100%;
+  top: -40%;
+  width: 1.693333rem;
+  height: 2.253333rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(15).active {
+  animation: logo_15 1s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(16) {
+  position: absolute;
+  left: -100%;
+  top: -40%;
+  width: 1.813333rem;
+  height: 2.32rem;
+}
+
+.layout_swiper_box .nineteen-slide .banner_box img:nth-of-type(16).active {
+  animation: logo_16 .5s 1 linear;
+  animation-fill-mode: forwards;
 }
 
 .layout_swiper_box .twenty-slide {

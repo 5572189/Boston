@@ -87,15 +87,20 @@ $(function(){
                 this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); // 动画只展现一次，去除ani类名
                 if (this.slides.eq(this.activeIndex).find('.qr-scanner').length == 1) {
                     $('.scan_box').addClass('active');
-                    $('.organs_box img').eq(0).delay(1000).fadeIn(1500);
-                    $('.organs_box img').eq(1).delay(1400).fadeIn(1500);
-                    $('.organs_box img').eq(2).delay(1800).fadeIn(1500);
-                    $('.organs_box img').eq(3).delay(2200).fadeIn(1500);
-                    $('.organs_box img').eq(4).delay(2600).fadeIn(1500);
-                    $('.organs_box img').eq(5).delay(3000).fadeIn(1500);
-                    $('.organs_box img').eq(6).delay(3500).fadeIn(1500);
+                    $('.organs_box img').eq(0).delay(300).fadeIn(1000);
+                    $('.organs_box img').eq(1).delay(700).fadeIn(1000);
+                    $('.organs_box img').eq(2).delay(1200).fadeIn(1000);
+                    $('.organs_box img').eq(3).delay(1600).fadeIn(1000);
+                    $('.organs_box img').eq(4).delay(2000).fadeIn(1000);
+                    $('.organs_box img').eq(5).delay(2500).fadeIn(1000);
+                    $('.organs_box img').eq(6).delay(3000).fadeIn(1000);
                 }
                 $('.twenty-slide').find('.shade').fadeOut();
+                if (this.activeIndex == 18){
+                    setTimeout(function(){
+                        $('.nineteen-slide').find('.banner_box img').addClass('active');
+                    },1500)
+                }
             }
         }
     });
@@ -126,6 +131,11 @@ $(function(){
             swiperAnimateCache(mySwiper);
             swiperAnimate(mySwiper);
         });
+        if (index == 16) {
+            setTimeout(function () {
+                $('.nineteen-slide').find('.banner_box img').addClass('active');
+            }, 1500)
+        }
     })
 
 // 第三屏
