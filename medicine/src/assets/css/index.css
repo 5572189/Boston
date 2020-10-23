@@ -181,7 +181,7 @@ body {
 .layout_swiper_box .one-slide .bubble_box .bubble_05 {
   position: absolute;
   right: -2rem;
-  top: 2.506667rem;
+  top: 15%;
   width: 4.186667rem;
   height: 4.32rem;
   -ms-transform: scale(0.5);
@@ -199,7 +199,7 @@ body {
 
 .layout_swiper_box .one-slide .bubble_box .bubble_06 {
   position: absolute;
-  top: 8.693333rem;
+  top: 40%;
   right: -2rem;
   width: 4.066667rem;
   height: 4.24rem;
@@ -219,7 +219,7 @@ body {
 .layout_swiper_box .one-slide .bubble_box .bubble_07 {
   position: absolute;
   left: -1.866667rem;
-  top: 9.866667rem;
+  top: 53%;
   width: 3.253333rem;
   height: 3.386667rem;
   -ms-transform: scale(0.8);
@@ -276,7 +276,7 @@ body {
 .layout_swiper_box .one-slide .bubble_box .bubble_10 {
   position: absolute;
   bottom: 1.533333rem;
-  left: 2.6rem;
+  left: 2.933333rem;
   width: 2.066667rem;
   height: 1.92rem;
 }
@@ -322,7 +322,7 @@ body {
   display: none;
   position: absolute;
   left: 0.666667rem;
-  top: 45%;
+  top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 7.52rem;
@@ -517,9 +517,14 @@ body {
 }
 
 .layout_swiper_box .three-slide {
+  overflow-y: auto;
+}
+
+.layout_swiper_box .three-slide .three-slide-box {
+  position: relative;
+  height: 21.653333rem;
   background: url(../imgs/three-swiper/bg.png) no-repeat;
   background-size: cover;
-  overflow: hidden;
 }
 
 .layout_swiper_box .three-slide .title {
@@ -743,7 +748,7 @@ body {
 .layout_swiper_box .three-slide .switch {
   position: absolute;
   left: 0.8rem;
-  bottom: 0.8rem;
+  bottom: 1.2rem;
   width: 3.106667rem;
   height: 3.106667rem;
 }
@@ -755,9 +760,14 @@ body {
 }
 
 .layout_swiper_box .four-slide {
+  overflow-y: auto;
+}
+
+.layout_swiper_box .four-slide .four-slide-box {
+  position: relative;
   background: url(../imgs/four-swiper/bg.png) no-repeat;
   background-size: cover;
-  overflow: hidden;
+  height: 21.653333rem;
 }
 
 .layout_swiper_box .four-slide .title {
@@ -1968,7 +1978,7 @@ body {
 
 .layout_swiper_box .ten-slide .ten_swiper_box {
   width: 90%;
-  height: calc(100% - 6.666667rem);
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -2497,7 +2507,7 @@ body {
 
 .layout_swiper_box .fifteen-slide .content {
   position: absolute;
-  bottom: 2.666667rem;
+  bottom: 2rem;
   left: 50%;
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -2613,7 +2623,7 @@ body {
 
 .layout_swiper_box .seventeen-slide .content {
   position: absolute;
-  bottom: 2.666667rem;
+  bottom: 2rem;
   left: 50%;
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -2796,8 +2806,8 @@ body {
 
 .layout_swiper_box .nineteen-slide {
   position: relative;
-  background: url(../imgs/nineteen-swiper/bg.png) repeat;
-  background-size: contain;
+  background: url(../imgs/nineteen-swiper/bg.png) no-repeat;
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -3735,51 +3745,51 @@ body {
 @keyframes bubble-05 {
   from {
     right: -2rem;
-    top: 2.506667rem;
+    top: 15%;
   }
 
   to {
     right: -0.666667rem;
-    top: 3.333333rem;
-    transform: scale(1);
+    top: 17%;
+    transform: scale(0.8);
   }
 }
 
 @keyframes bubble-05-floating {
   0%, 100% {
     right: -0.666667rem;
-    top: 3.333333rem;
-    transform: scale(1);
+    top: 17%;
+    transform: scale(0.8);
   }
 
   50% {
     right: -0.666667rem;
-    top: 3.2rem;
+    top: 18%;
   }
 }
 
 @keyframes bubble-06 {
   from {
-    top: 8.693333rem;
+    top: 40%;
     right: -2rem;
   }
 
   to {
-    top: 8rem;
+    top: 38%;
     right: -1.866667rem;
-    transform: scale(1);
+    transform: scale(0.8);
   }
 }
 
 @keyframes bubble-06-floating {
   0%, 100% {
-    top: 8rem;
+    top: 38%;
     right: -1.866667rem;
-    transform: scale(1);
+    transform: scale(0.8);
   }
 
   50% {
-    top: 7.866667rem;
+    top: 39%;
     right: -1.866667rem;
   }
 }
@@ -3787,26 +3797,26 @@ body {
 @keyframes bubble-07 {
   from {
     left: -1.866667rem;
-    top: 9.866667rem;
+    top: 53%;
   }
 
   to {
     left: 1.733333rem;
-    top: 11.066667rem;
-    transform: scale(1);
+    top: 55%;
+    transform: scale(0.8);
   }
 }
 
 @keyframes bubble-07-floating {
   0%, 100% {
     left: 1.733333rem;
-    top: 11.066667rem;
-    transform: scale(1);
+    top: 55%;
+    transform: scale(0.8);
   }
 
   50% {
     left: 1.733333rem;
-    top: 10.933333rem;
+    top: 56%;
   }
 }
 
@@ -3865,21 +3875,21 @@ body {
 @keyframes bubble-10 {
   from {
     bottom: 1.533333rem;
-    left: 2.6rem;
+    left: 2.933333rem;
   }
 
   to {
     right: -0.533333rem;
-    bottom: 3rem;
-    transform: scale(1);
+    bottom: 2.666667rem;
+    transform: scale(0.8);
   }
 }
 
 @keyframes bubble-10-floating {
   0%, 100% {
     right: -0.533333rem;
-    bottom: 3rem;
-    transform: scale(1);
+    bottom: 2.666667rem;
+    transform: scale(0.8);
   }
 
   50% {
@@ -3896,19 +3906,19 @@ body {
 
   to {
     left: 2.466667rem;
-    bottom: -1.066667rem;
+    bottom: -1.333333rem;
   }
 }
 
 @keyframes bubble-11-floating {
   0%, 100% {
     left: 2.466667rem;
-    bottom: -1.066667rem;
+    bottom: -1.333333rem;
   }
 
   50% {
     left: 2.466667rem;
-    bottom: -0.933333rem;
+    bottom: -1.066667rem;
   }
 }
 

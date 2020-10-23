@@ -231,7 +231,7 @@ $(function(){
 // 第十屏
     var ten_swiper = new Swiper('.ten_swiper_box', {
         direction: 'vertical',
-        slidesPerView: 2,
+        slidesPerView: 3,
         autoHeight: true, //高度随内容变化
         // spaceBetween: 60,
         centeredSlides: true,
