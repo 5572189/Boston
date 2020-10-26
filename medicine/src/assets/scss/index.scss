@@ -2197,12 +2197,212 @@ body {
   }
 
   .eleven-slide{
-    background: #092b6a;
+    overflow-y: auto;
+    .layout_swiper{
+      position: relative;
+      width: 100%;
+      height: 1808px;
+      background: url(../imgs/eleven-swiper/bg_01.png) no-repeat;
+      background-size: cover;
+      .content_title{
+        width: 90%;
+        margin: 50px auto;
+        div:nth-of-type(1){
+          border-bottom: 1px solid #fff;
+          img{
+            display: block;
+            width: 316px;
+            height: 60px;
+            margin: 0 auto 40px;
+          }
+        }
+        div:nth-of-type(2) {
+          font-size: 28px;
+          line-height: 40px;
+          color: #fff;
+        }
+      }
+      .content_video{
+        width: 90%;
+        margin: 40px auto;
+        div:nth-of-type(1) {
+            video{
+              width: 100%;
+              height: 365px;
+            }
+            video:nth-of-type(2){
+              display: none;
+            }
+        }
+
+        div:nth-of-type(2) {
+          display: flex;
+          justify-content: space-between;
+          align-content: center;
+          border: 1px solid #00a0e9;
+          border-radius: 10px;
+          height: 70px;
+          overflow: hidden;
+          span{
+            display: block;
+            width: 50%;
+            line-height: 70px;
+            text-align: center;
+            color: #fff;
+          }
+          span:nth-of-type(1){
+            &::before {
+              display: inline-block;
+              width: 31px;
+              height: 26px;
+              content: "";
+              background: url(../imgs/eleven-swiper/icon.png) no-repeat;
+              background-size: contain;
+              margin-right: 20px;
+            }
+          }
+          span:nth-of-type(2) {
+            &::after {
+              display: inline-block;
+              width: 31px;
+              height: 26px;
+              content: "";
+              background: url(../imgs/eleven-swiper/icon_02.png) no-repeat;
+              background-size: contain;
+              margin-left: 20px;
+            }
+          }
+          span.active{
+            background: #00a0e9;
+            font-size: 26px;
+          }
+        }
+      }
+      .banner_box{
+        width: 90%;
+        margin: 40px auto;
+        .banner_img{
+          width: 96%;
+          padding: 2%;
+          background: rgba(0, 0, 0, 0.2);
+          display: flex;
+          justify-content: space-between;
+          img{
+            width: 206px;
+            height: 123px;
+          }
+        }
+        p{
+          display: flex;
+          justify-content: space-between;
+          line-height: 50px;
+          span{
+            display: block;
+              width: 33%;
+              text-align: center;
+            font-size: 26px;
+            color: #fff;
+          }
+        }
+      }
+      .educare{
+        width: 90%;
+        margin: 100px auto 0;
+        div{
+          width: 305px;
+          height: 75px;
+          text-align: center;
+          line-height: 75px;
+          color: #fff;
+          font-size: 26px;
+          border-radius: 10px;
+          border: 1px solid #fff;
+          background: #00a0e9;
+          span{
+            display: block;
+            animation: switch-scale 3s infinite;
+          }
+        }
+      }
+    }
     .title {
       margin-left: 40px;
       img {
         width: 482px;
         height: auto;
+      }
+    }
+  }
+
+  .eleven-slide-append{
+    overflow-y: auto;
+    .title {
+      margin-left: 40px;
+
+      img {
+        width: 482px;
+        height: auto;
+      }
+    }
+    .layout_swiper{
+      position: relative;
+      width: 100%;
+      min-height: 1577px;
+      height: 100%;
+      background: url(../imgs/eleven-swiper/bg_02.png) no-repeat;
+      background-size: cover;
+    }
+    .content_title {
+      width: 90%;
+      margin: 70px auto 0;
+      >img {
+        display: block;
+        width: 267px;
+        height: 87px;
+        margin: 0 auto;
+      }
+      div{
+        width: 100%;
+        position: relative;
+        height: 500px;
+        img{
+          width: 251px;
+          height: 85px;
+        }
+        img:nth-of-type(1){
+          position: absolute;
+          left: 20px;
+          top: 60px;
+        }
+        img:nth-of-type(2) {
+          position: absolute;
+          right: 20px;
+          top: 100px;
+        }
+        img:nth-of-type(3) {
+          position: absolute;
+          left: 20px;
+          bottom: 80px;
+        }
+        img:nth-of-type(4) {
+          position: absolute;
+          right: 20px;
+          bottom: 120px;
+        }
+      }
+    }
+    .content_desc{
+      width: 670px;
+      height: 531px;
+      margin: 20px auto;
+      font-size: 28px;
+      color: #fff;
+      text-align: justify;
+      line-height: 45px;
+      background: url(../imgs/eleven-swiper/content_desc_bg.png) no-repeat;
+      background-size: contain;
+      div{
+        padding: 50px 40px 50px 50px;
       }
     }
   }
