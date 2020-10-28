@@ -114,6 +114,11 @@ $(function(){
                     $('.organs_box img').eq(6).delay(3000).fadeIn(1000);
                 }
                 $('.twenty-slide').find('.shade').fadeOut();
+                if(this.activeIndex == 0){
+                    $('.home_nav').hide();
+                }else{
+                    $('.home_nav').show();
+                }
                 if (this.activeIndex == 18){
                     setTimeout(function(){
                         $('.nineteen-slide').find('.banner_box img').addClass('active');

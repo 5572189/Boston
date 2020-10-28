@@ -6,6 +6,105 @@ body {
   margin: 0;
 }
 
+.home_nav {
+  display: none;
+  position: fixed;
+  right: 0.733333rem;
+  top: 2.4rem;
+  z-index: 999;
+}
+
+.home_nav img {
+  width: 1.08rem;
+  height: 1.08rem;
+  animation: switch-scale 3s infinite;
+}
+
+.nav_bar {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.nav_bar .nav_bar_box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 6.666667rem;
+  padding: 0 0.933333rem;
+  height: 100%;
+  background: url(../imgs/two-swiper/nav_bar_bg.png) no-repeat;
+  background-size: cover;
+  transform: translate3d(100%, 0, 0);
+  transition: all 0.3s;
+}
+
+.nav_bar .nav_bar_box .logo_close {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 2.133333rem;
+}
+
+.nav_bar .nav_bar_box .logo_close img:nth-of-type(1) {
+  width: 2.16rem;
+  height: 1rem;
+}
+
+.nav_bar .nav_bar_box .logo_close img:nth-of-type(2) {
+  width: 0.506667rem;
+  height: 0.506667rem;
+}
+
+.nav_bar .nav_bar_box ul {
+  position: relative;
+  list-style: none;
+  margin-top: 1.066667rem;
+}
+
+.nav_bar .nav_bar_box ul li {
+  float: left;
+  width: 50%;
+  padding-bottom: 0.933333rem;
+  font-size: 0.373333rem;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.nav_bar .nav_bar_box ul::before {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 46%;
+  top: 0;
+  width: 0.013333rem;
+  height: 100%;
+  background: #dcdcdc;
+}
+
+.nav_bar .nav_bar_box ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nav_bar .nav_bar_box ul li:nth-of-type(even) {
+  text-indent: 0.266667rem;
+}
+
+.nav_bar .nav_bar_box.active {
+  transform: translate3d(0, 0, 0);
+}
+
 .layout_box {
   max-width: 10rem;
   width: 100%;
@@ -410,110 +509,25 @@ body {
 }
 
 .layout_swiper_box .two-slide .mission_desc {
-  margin-top: 0.533333rem;
-  margin-left: 0.733333rem;
   background: rgba(0, 0, 0, 0.4);
   font-size: 0.373333rem;
   color: #fff;
-  width: 4.6rem;
+  width: 80%;
+  margin: 0.533333rem auto;
   padding: 0.4rem 0.293333rem 0.4rem 0.4rem;
-  letter-spacing: 0.026667rem;
 }
 
 .layout_swiper_box .two-slide .line {
-  margin-top: 0.4rem;
-  margin-left: 0.733333rem;
-  width: 0.88rem;
+  position: absolute;
+  left: 0.733333rem;
+  bottom: 1.333333rem;
+  width: 0.44rem;
   height: auto;
 }
 
 .layout_swiper_box .two-slide .line img {
   display: block;
   width: 100%;
-}
-
-.layout_swiper_box .two-slide .nav_bar {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.layout_swiper_box .two-slide .nav_bar .nav_bar_box {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 6.666667rem;
-  padding: 0 0.933333rem;
-  height: 100%;
-  background: url(../imgs/two-swiper/nav_bar_bg.png) no-repeat;
-  background-size: cover;
-  transform: translate3d(100%, 0, 0);
-  transition: all 0.3s;
-}
-
-.layout_swiper_box .two-slide .nav_bar .nav_bar_box .logo_close {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 2.133333rem;
-}
-
-.layout_swiper_box .two-slide .nav_bar .nav_bar_box .logo_close img:nth-of-type(1) {
-  width: 2.16rem;
-  height: 1rem;
-}
-
-.layout_swiper_box .two-slide .nav_bar .nav_bar_box .logo_close img:nth-of-type(2) {
-  width: 0.506667rem;
-  height: 0.506667rem;
-}
-
-.layout_swiper_box .two-slide .nav_bar .nav_bar_box ul {
-  position: relative;
-  list-style: none;
-  margin-top: 1.066667rem;
-}
-
-.layout_swiper_box .two-slide .nav_bar .nav_bar_box ul li {
-  float: left;
-  width: 50%;
-  padding-bottom: 0.933333rem;
-  font-size: 0.373333rem;
-  color: #fff;
-  text-decoration: underline;
-}
-
-.layout_swiper_box .two-slide .nav_bar .nav_bar_box ul::before {
-  content: "";
-  display: block;
-  clear: both;
-  position: absolute;
-  left: 46%;
-  top: 0;
-  width: 0.013333rem;
-  height: 100%;
-  background: #dcdcdc;
-}
-
-.layout_swiper_box .two-slide .nav_bar .nav_bar_box ul::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.layout_swiper_box .two-slide .nav_bar .nav_bar_box ul li:nth-of-type(even) {
-  text-indent: 0.266667rem;
-}
-
-.layout_swiper_box .two-slide .nav_bar .nav_bar_box.active {
-  transform: translate3d(0, 0, 0);
 }
 
 .layout_swiper_box .three-slide {
@@ -1828,6 +1842,7 @@ body {
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(1) img:nth-of-type(2) {
   margin-top: 0.4rem;
   width: 4.68rem;
+  margin-left: -0.133333rem;
   animation-delay: 1s;
 }
 
@@ -1853,6 +1868,7 @@ body {
   margin-top: 0.8rem;
   width: 4.666667rem;
   animation-delay: 5s;
+  margin-left: -0.106667rem;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(1) img:nth-of-type(7) {
@@ -1863,7 +1879,7 @@ body {
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(3) {
   position: absolute;
-  right: -0.066667rem;
+  right: -0.2rem;
   top: 0;
   z-index: 99;
 }
@@ -1884,24 +1900,28 @@ body {
   width: 4.786667rem;
   margin-top: 0.8rem;
   animation-delay: 3.5s;
+  margin-left: -0.066667rem;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(3) img:nth-of-type(3) {
   width: 4.733333rem;
   margin-top: 0.8rem;
   animation-delay: 2.5s;
+  margin-left: 0.04rem;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(3) img:nth-of-type(2) {
   width: 4.68rem;
-  margin-top: 1.6rem;
+  margin-top: 0.8rem;
   animation-delay: 1.5s;
+  margin-left: 0.04rem;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box div:nth-of-type(3) img:nth-of-type(1) {
   margin-top: 1.6rem;
   width: 4.6rem;
   animation-delay: 0.8s;
+  margin-left: -0.106667rem;
 }
 
 .layout_swiper_box .nine-slide .nine-slide-box .click_box .history_box .history_line {
