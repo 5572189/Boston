@@ -2200,6 +2200,7 @@ body {
   font-size: 0.373333rem;
   line-height: 0.533333rem;
   color: #fff;
+  margin-top: 0.666667rem;
 }
 
 .layout_swiper_box .eleven-slide .layout_swiper .content_video {
@@ -2300,7 +2301,7 @@ body {
 
 .layout_swiper_box .eleven-slide .layout_swiper .educare {
   width: 90%;
-  margin: 1.333333rem auto 0;
+  margin: 0.666667rem auto 0;
 }
 
 .layout_swiper_box .eleven-slide .layout_swiper .educare div {
