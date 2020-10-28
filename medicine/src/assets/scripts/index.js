@@ -10,8 +10,7 @@ $(function(){
             i++;
             y--;
             span.text(i + '%');
-            $('.title_show').css({
-                // 'width': i+'%',
+            $('.title_show').css({ 
                 'clip-path': 'polygon(0% ' + y + '%, 100% ' + y + '%, 100% 100%, 0% 100%)'
             })
             if (i == 100) {
@@ -43,6 +42,25 @@ $(function(){
             }
         }
         bubble_load();
+    }
+
+    // 创新研发 动画 
+    function twelve_slide_fn(callback = function(){}) {
+        var y = 100;
+
+        function twelve_load() { 
+            y--; 
+            $('.img_animated_box img').eq(1).css({ 
+                'clip-path': 'inset(0% 0% '+ y +'% 0%)'
+            })
+            if (y == 0) {
+                window.cancelAnimationFrame(twelve_stops);
+                callback();
+            } else {
+                twelve_stops = requestAnimationFrame(twelve_load);
+            }
+        }
+        twelve_load();
     }
 
 // 第一屏
@@ -100,6 +118,12 @@ $(function(){
                     setTimeout(function(){
                         $('.nineteen-slide').find('.banner_box img').addClass('active');
                     },1500)
+                }
+                if(this.activeIndex == 12 && $('.img_animated_box').hasClass('active')){
+                    twelve_slide_fn(function(){
+                        $('.img_animated_box').removeClass('active');
+                        $('.twelve-slide').find('.img_animated_box img').eq(2).fadeIn();
+                    })
                 }
             }
         }
