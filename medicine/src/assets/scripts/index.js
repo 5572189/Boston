@@ -10,7 +10,7 @@ $(function(){
             i++;
             y--;
             span.text(i + '%');
-            $('.title_show').css({ 
+            $('.title_show').css({
                 'clip-path': 'polygon(0% ' + y + '%, 100% ' + y + '%, 100% 100%, 0% 100%)'
             })
             if (i == 100) {
@@ -44,13 +44,13 @@ $(function(){
         bubble_load();
     }
 
-    // 创新研发 动画 
+    // 创新研发 动画
     function twelve_slide_fn(callback = function(){}) {
         var y = 100;
 
-        function twelve_load() { 
-            y--; 
-            $('.img_animated_box img').eq(1).css({ 
+        function twelve_load() {
+            y--;
+            $('.img_animated_box img').eq(1).css({
                 'clip-path': 'inset(0% 0% '+ y +'% 0%)'
             })
             if (y == 0) {
@@ -79,61 +79,78 @@ $(function(){
         });
         bubble_fn();
     });
-
+    var mySwiper = "";
     // 指纹点击事件
     $('.fingerprint_img').on('click', function () {
         $('.fingerprint_box').fadeOut(500,function(){
+
             // 控制气泡移动
             $('.bubble_box img').addClass('on');
             // 气泡上方logo显示
-            $('.logo_bg_title').delay(3000).fadeIn();
+            $('.logo_bg_title').delay(2000).fadeIn();
             //气泡中间文字显示
-            $('.bubble_title').delay(3000).fadeIn();
+            $('.bubble_title').delay(2000).fadeIn();
             //下一页展示
-            $('.one-slide').find('.next').fadeIn(1000);
-
+            $('.one-slide').find('.next').delay(2000).fadeIn();
+            // swiper 初始化
+            swiper_fn();
         })
     })
-    var mySwiper = new Swiper('.layout_swiper_box', {
-        on: {
-            init: function () {
-                swiperAnimateCache(this); //隐藏动画元素
-                swiperAnimate(this); //初始化完成开始动画
-            },
-            slideChangeTransitionEnd: function () {
-                swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-                this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); // 动画只展现一次，去除ani类名
-                if (this.slides.eq(this.activeIndex).find('.qr-scanner').length == 1) {
-                    $('.scan_box').addClass('active');
-                    $('.organs_box img').eq(0).delay(300).fadeIn(1000);
-                    $('.organs_box img').eq(1).delay(700).fadeIn(1000);
-                    $('.organs_box img').eq(2).delay(1200).fadeIn(1000);
-                    $('.organs_box img').eq(3).delay(1600).fadeIn(1000);
-                    $('.organs_box img').eq(4).delay(2000).fadeIn(1000);
-                    $('.organs_box img').eq(5).delay(2500).fadeIn(1000);
-                    $('.organs_box img').eq(6).delay(3000).fadeIn(1000);
-                }
-                $('.twenty-slide').find('.shade').fadeOut();
-                if(this.activeIndex == 0){
-                    $('.home_nav').hide();
-                }else{
-                    $('.home_nav').show();
-                }
-                if (this.activeIndex == 18){
-                    setTimeout(function(){
-                        $('.nineteen-slide').find('.banner_box img').addClass('active');
-                    },1500)
-                }
-                if(this.activeIndex == 12 && $('.img_animated_box').hasClass('active')){
-                    twelve_slide_fn(function(){
-                        $('.img_animated_box').removeClass('active');
-                        $('.twelve-slide').find('.img_animated_box img').eq(2).fadeIn();
-                    })
+    function swiper_fn(){
+        mySwiper = new Swiper('.layout_swiper_box', {
+            on: {
+                init: function () {
+                    swiperAnimateCache(this); //隐藏动画元素
+                    swiperAnimate(this); //初始化完成开始动画
+                },
+                slideChangeTransitionEnd: function () {
+                    swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                    this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); // 动画只展现一次，去除ani类名
+                    callback_swiper(this.activeIndex);
                 }
             }
-        }
-    });
+        });
+    }
 
+    function callback_swiper(index){
+        if ($('.swiper_layout').eq(index).find('.qr-scanner').length == 1) {
+            $('.scan_box').addClass('active');
+            $('.organs_box img').eq(0).delay(300).fadeIn(1000);
+            $('.organs_box img').eq(1).delay(700).fadeIn(1000);
+            $('.organs_box img').eq(2).delay(1200).fadeIn(1000);
+            $('.organs_box img').eq(3).delay(1600).fadeIn(1000);
+            $('.organs_box img').eq(4).delay(2000).fadeIn(1000);
+            $('.organs_box img').eq(5).delay(2500).fadeIn(1000);
+            $('.organs_box img').eq(6).delay(3000).fadeIn(1000);
+        }
+        $('.twenty-slide').find('.shade').fadeOut();
+        if (index == 0) {
+            $('.home_nav').fadeOut();
+        } else {
+            $('.home_nav').fadeIn();
+        }
+        if (index == 19) {
+            setTimeout(function () {
+                $('.nineteen-slide').find('.banner_box img').addClass('active');
+            }, 1500)
+        }
+        if (index == 12 && $('.img_animated_box').hasClass('active')) {
+            twelve_slide_fn(function () {
+                $('.img_animated_box').removeClass('active');
+                $('.twelve-slide').find('.img_animated_box img').eq(2).fadeIn();
+            })
+        }
+        if(index == 3 || index == 4 || index == 6 || index == 8){
+            $('.swiper_layout').eq(index).find('.glide_hint').addClass('active');
+            $('.swiper_layout').eq(index).find('.glide_hint').delay(2000).fadeOut(1000)
+        }
+        if (index == 6) {
+            $('.seven-slide').find('.innovation_box_01').addClass('active');
+            $('.seven-slide').find('.innovation_box_01 img').eq(1).delay(1000).fadeIn();
+            $('.seven-slide').find('.innovation_box_02').addClass('active');
+            $('.seven-slide').find('.innovation_box_02 img').eq(1).delay(1000).fadeIn();
+        }
+    }
 // 第二屏
 
     // 导航点击事件
@@ -148,22 +165,19 @@ $(function(){
         $('.nav_bar').fadeOut(1000);
     });
     // 导航内的标题点击事件
-    $('.nav_bar_box').on('click','ul li',function(){
-        var index = $(this).index();
+    $('.nav_bar_box').on('click', '.tab_link', function () {
+        var index = $(this).data('index');
         $('.nav_bar_box').removeClass('active');
-        $('.nav_bar').fadeOut(function(){
-            if (index >= 15) {
-                mySwiper.slideTo(index + 2, 1000, false);
-            }else{
-                mySwiper.slideTo(index, 1000, false);
-            }
+        $('.nav_bar').fadeOut(function () {
+            mySwiper.slideTo(index, 1000, false);
             swiperAnimateCache(mySwiper);
             swiperAnimate(mySwiper);
-        });
+        })
+        callback_swiper(index);
         if (index == 16) {
             setTimeout(function () {
                 $('.nineteen-slide').find('.banner_box img').addClass('active');
-            }, 1500)
+            }, 1000)
         }
     })
 
@@ -206,9 +220,14 @@ $(function(){
         $('.six-slide').css({
             'overflow-y': 'auto'
         })
+
         $('.six-swiper-box').addClass('on');
         $('.six-swiper-box').find('.history_line').addClass('active');
         $('.six-swiper-box').find('.history_box img').addClass('active');
+        $('.six-slide').find('.glide_hint').fadeIn(function(){
+            $('.six-slide').find('.glide_hint').addClass('active');
+            $('.six-slide').find('.glide_hint').delay(2000).fadeOut(1000)
+        });
     })
 
 // 第七屏
@@ -217,20 +236,20 @@ $(function(){
         if ($('.innovation').hasClass('active')) {
 
             $('.innovation').removeClass('active');
-            $('.innovation_box_01').find('img').eq(1).fadeOut(function () {
-                $('.innovation_box_01').find('img').eq(0).fadeIn();
+            $('.innovation_box_01').find('img').eq(2).fadeOut(function () {
+                $('.innovation_box_01').find('img').eq(1).fadeIn();
             });
-            $('.innovation_box_02').find('img').eq(1).fadeOut(function () {
-                $('.innovation_box_02').find('img').eq(0).fadeIn();
+            $('.innovation_box_02').find('img').eq(2).fadeOut(function () {
+                $('.innovation_box_02').find('img').eq(1).fadeIn();
             });
         } else {
 
             $('.innovation').addClass('active');
-            $('.innovation_box_01').find('img').eq(0).fadeOut(function () {
-                $('.innovation_box_01').find('img').eq(1).fadeIn();
+            $('.innovation_box_01').find('img').eq(1).fadeOut(function () {
+                $('.innovation_box_01').find('img').eq(2).fadeIn();
             });
-            $('.innovation_box_02').find('img').eq(0).fadeOut(function () {
-                $('.innovation_box_02').find('img').eq(1).fadeIn();
+            $('.innovation_box_02').find('img').eq(1).fadeOut(function () {
+                $('.innovation_box_02').find('img').eq(2).fadeIn();
             });
         }
     })
@@ -240,8 +259,18 @@ $(function(){
         $('.eight-slide').find('.mask').fadeOut();
         $('.eight-slide').css({
             'overflow-y': 'auto'
-        })
+        });
+        $('.eight-slide').find('.glide_hint').fadeIn(function(){
+            $('.eight-slide').find('.glide_hint').addClass('active');
+            $('.eight-slide').find('.glide_hint').delay(2000).fadeOut(1000)
+        });
     })
+    $('.eight-slide').scroll(function () {
+        if ($('.eight-slide').scrollTop() >= 730) {
+            $('.eight-slide').find('.photo img').addClass('active');
+        }
+    });
+
 
 // 第九屏
 
@@ -251,10 +280,14 @@ $(function(){
         });
         $('.nine-slide').css({
             'overflow-y': 'auto'
-        })
+        });
         $('.nine-slide-box').addClass('on');
         $('.nine-slide-box').find('.history_line').addClass('active');
         $('.nine-slide-box').find('.history_box img').addClass('active');
+        $('.nine-slide').find('.glide_hint').fadeIn(function(){
+            $('.nine-slide').find('.glide_hint').addClass('active');
+            $('.nine-slide').find('.glide_hint').delay(2000).fadeOut(1000)
+        });
     })
 
 // 第十屏
@@ -262,8 +295,10 @@ $(function(){
         direction: 'vertical',
         slidesPerView: 3,
         autoHeight: true, //高度随内容变化
-        // spaceBetween: 60,
+        initialSlide: 1,
+        spaceBetween: 100,
         centeredSlides: true,
+        centeredSlidesBounds: true,
         on: {
             slideChangeTransitionEnd: function(){
                 if(this.activeIndex < 3){
@@ -305,7 +340,26 @@ $(function(){
         ten_swiper.slideTo(slide, 1000, false);
     })
 
-// 第十二屏
+// 第十一屏
+    $('.eleven-slide').on('click', '.video_select span',function(){
+        var index = $(this).index();
+        if($(this).hasClass('active')){
+            return false;
+        }else{
+            $(this).addClass('active');
+            $(this).siblings().removeClass('active');
+            $('.eleven-slide').find('.video_mp video').fadeOut(100);
+            $('.eleven-slide').find('.video_mp video').eq(index).delay(150).fadeIn();
+        }
+    })
+
+    $('.eleven-slide').on('click', '.educare div',function(){
+        mySwiper.slideTo(11, 1000, false);
+        swiperAnimateCache(mySwiper);
+        swiperAnimate(mySwiper);
+    });
+
+// 第十三屏
 
     $('.twelve-slide').on('click','.mask',function(){
         $('.twelve-slide').find('.mask').fadeOut();
@@ -314,7 +368,7 @@ $(function(){
         })
     })
 
-// 第十三屏
+// 第十四屏
     new Swiper('.banner_swiper_box', {
         slidesPerView: 2,
         // autoplay: 3000,
@@ -335,42 +389,31 @@ $(function(){
         })
     })
 
-// 第十四屏
+// 第十五屏
+
     var more_falg = 1;
     $('.fourteen-slide').on('click','.more_img',function(){
         if(more_falg == 1){
-            $('.fourteen-slide').find('.content_box div').eq(0).fadeOut(function(){
-                $('.fourteen-slide').find('.content_box div').eq(1).fadeIn();
+            $('.fourteen-slide').find('.content_box >div').eq(0).fadeOut(function(){
+                $('.fourteen-slide').find('.content_box >div').eq(1).fadeIn();
             });
             more_falg = 2;
         }else if(more_falg == 2){
-            $('.fourteen-slide').find('.content_box div').eq(1).fadeOut(function(){
-                $('.fourteen-slide').find('.content_box div').eq(2).fadeIn();
+            $('.fourteen-slide').find('.content_box >div').eq(1).fadeOut(function(){
+                $('.fourteen-slide').find('.content_box >div').eq(2).fadeIn();
             });
             more_falg = 3;
         }else if(more_falg == 3){
-            $('.fourteen-slide').find('.content_box div').eq(2).fadeOut(function(){
-                $('.fourteen-slide').find('.content_box div').eq(0).fadeIn();
+            $('.fourteen-slide').find('.content_box >div').eq(2).fadeOut(function(){
+                $('.fourteen-slide').find('.content_box >div').eq(0).fadeIn();
             });
             more_falg = 1;
         }
     })
 
 
-// 第十八屏
-    new Swiper('.box_header_banner', {
-        slidesPerView: 'auto',
-        speed : 1000,
-        autoplay : {
-            delay : 1000,
-            stopOnLastSlide : false,
-            disableOnInteraction : true,
-        },
-        autoplayDisableOnInteraction: false,
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    });
+// 第十九屏
+
     $('.eighteen-slide').on('click','.content_title li',function(){
         var index = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');
@@ -379,7 +422,7 @@ $(function(){
 
     })
 
-// 第十九屏
+// 第二十屏
     $('.nineteen-slide').on('click','.content_list li',function(){
         var index = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');
@@ -388,22 +431,11 @@ $(function(){
 
     })
 
-// 第二十屏
-    $('.twenty-slide').on('click','.mask',function(){
-        $('.twenty-slide').find('.mask').fadeOut();
-        $('.twenty-slide').css({
-            'overflow-y': 'auto'
-        })
-    })
-    $('.twenty-slide').on('click','.qr_code_box div',function(){
-        var src = $(this).find('.code').attr('src');
-        $('.twenty-slide').find('.shade img').attr('src',src);
-        $('.twenty-slide').find('.shade').fadeIn();
+// 第二十一屏
+    // $('.twenty-slide').on('click','.qr_code_box div',function(){
+    //     var src = $(this).find('.code').attr('src');
+    //     $('.twenty-slide').find('.shade img').attr('src',src);
+    //     $('.twenty-slide').find('.shade').fadeIn();
 
-    })
-    $('.twenty-slide').on('click','.shade',function(event){
-        if(event.target == $('.twenty-slide').find('.shade')[0]){
-            $('.twenty-slide').find('.shade').fadeOut();
-        }
-    })
+    // })
 })

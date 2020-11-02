@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/plugins/swiper/swiper.min.css">
     <link rel="stylesheet" href="assets/plugins/swiper/animate.min.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/index.css?time=20201101">
 </head>
 
 <body>
      <!-- 导航 -->
      <div class="home_nav" >
-        <img src="assets/imgs/two-swiper/home.png" alt="">
+        <img src="assets/imgs/two-swiper/tab_home.png" alt="">
     </div>
     <div class="nav_bar">
         <div class="nav_bar_box">
@@ -26,32 +26,79 @@
                 <img src="assets/imgs/one-swiper/logo.png" alt="">
                 <img class="close" src="assets/imgs/two-swiper/close.png" alt="">
             </div>
-            <ul>
-                <li>为生命创新</li>
-                <li>我们的使命</li>
-                <li>核心价值观</li>
-                <li>改善生命质量</li>
-                <li>品类领导地位</li>
-                <li>全球发展史</li>
-                <li>卓越的产品创新</li>
-                <li>大中华区战略构建</li>
-                <li>在华发展里程碑</li>
-                <li>在华创新产品</li>
-                <li>在华专业教育</li>
-                <li>在华创新研发</li>
-                <li>T3创库</li>
-                <li>合作共赢</li>
-                <li>员工关爱</li>
-                <li>企业社会责任</li>
-                <li>奖项及荣誉</li>
-                <li>联系我们</li>
+            <ul class="big_title">
+                <li>
+                    <p class="tab_link" data-index="0"><span>首页</span></p>
+                </li>
+                <li>
+                    <p><span class="no_line">波士顿科学全球</span></p>
+                    <div class="little_title">
+                        <ul>
+                            <li class="tab_link" data-index="1">
+                                <span>我们的使命</span>
+                            </li>
+                            <li class="tab_link" data-index="2">
+                                <span>核心价值观</span>
+                            </li>
+                            <li class="tab_link" data-index="3">
+                                <span>改善生命质量</span>
+                            </li>
+                            <li class="tab_link" data-index="4">
+                                <span>品类领导地位</span>
+                            </li>
+                            <li  class="tab_link" data-index="5">
+                                <span>全球发展史</span>
+                            </li>
+                            <li  class="tab_link" data-index="6">
+                                <span>卓越的产品创新</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <p><span class="no_line">波士顿科学大中华</span></p>
+                    <div class="little_title">
+                        <ul>
+                            <li class="tab_link" data-index="7">
+                                <span>大中华区战略构建</span>
+                            </li>
+                            <li class="tab_link" data-index="8">
+                                <span>在华发展里程碑</span>
+                            </li>
+                            <li  class="tab_link" data-index="9">
+                                <span>在华创新产品</span>
+                            </li>
+                            <li  class="tab_link" data-index="10">
+                                <span>在华专业教育</span>
+                            </li>
+                            <li  class="tab_link" data-index="12">
+                                <span>在华创新研发</span>
+                            </li>
+                            <li  class="tab_link" data-index="13">
+                                <span>合作共赢</span>
+                            </li>
+                            <li  class="tab_link" data-index="15">
+                                <span>员工关爱</span>
+                            </li>
+                            <li  class="tab_link" data-index="18">
+                                <span>企业社会责任</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <p class="tab_link" data-index="19"><span>奖项及荣誉</span></p>
+                </li>
+                <li>
+                    <p class="tab_link" data-index="20"><span>联系我们</span></p>
+                </li>
             </ul>
         </div>
     </div>
     <div class="layout_swiper_box swiper-container">
         <div class="swiper-wrapper">
             <!-- 第一页 -->
-            <div class="swiper-slide one-slide">
+            <div class="swiper-slide swiper_layout one-slide">
                 <!-- loading -->
                 <div class="loading">
                     <div class="loading_img">
@@ -85,44 +132,56 @@
                 <!-- 指纹 -->
                 <div class="fingerprint_box">
                     <img class="logo_img" src="assets/imgs/one-swiper/logo.png" alt="">
+                    <p class="click">轻按进入</p>
                     <img class="fingerprint_img" src="assets/imgs/one-swiper/fingerprint.png" alt="">
-                    <img class="fingerprint_title" src="assets/imgs/one-swiper/fingerprint_title.png" alt="">
-                </div>
+                    <p class="fingerprint_title">
+                        开启波科<br>
+                        品牌之旅
+                    </p>
+                 </div>
                 <!-- 下一页 -->
                 <div class="next">
                     <img src="assets/imgs/one-swiper/left_slide.png" alt="">
                 </div>
             </div>
             <!-- 第二页 -->
-            <div class="swiper-slide two-slide">
+            <div class="swiper-slide swiper_layout two-slide">
                 <img class="logo_bg" src="assets/imgs/one-swiper/logo_bg_title.png" alt="">
                 <div class="mission_title">
                     <img  src="assets/imgs/two-swiper/mission_title.png" alt="">
-                    
+
                 </div>
-                <div class="mission_desc ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+                <section class="video_box ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.7s">
+                    <video poster="assets/imgs/video/ias_img_03.png" controls>
+                        <source src="assets/imgs/video/propaganda.mp4" type="video/mp4">
+                        <source src="assets/imgs/video/propaganda.mp4" type="video/ogg">
+                        您的浏览器不支持 HTML5 video 标签。
+                    </video>
+                </section>
+                <div class="mission_desc ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s"
                     swiper-animate-delay="0.5s">
-                    波士顿科学致力于通过创新的医疗解决方案，改善人们的生活，提高全世界患者的健康品质。 
+                    波士顿科学致力于通过创新的医疗解决方案，改善人们的生活，提高全世界患者的健康品质。
                 </div>
+
                 <div class="line ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s"
                     swiper-animate-delay="0.7s">
                     <img src="assets/imgs/two-swiper/inn_line.png" alt="">
                 </div>
                 <!-- 流星 -->
-                <div class="meteor">
+                <!-- <div class="meteor">
                     <img src="assets/imgs/two-swiper/meteor_1.png" alt="">
                     <img src="assets/imgs/two-swiper/meteor_2.png" alt="">
                     <img src="assets/imgs/two-swiper/meteor_3.png" alt="">
                     <img src="assets/imgs/two-swiper/meteor_4.png" alt="">
-                </div>
+                </div> -->
                 <div class="next">
                     <img src="assets/imgs/one-swiper/left_slide.png" alt="">
                 </div>
-                
+
             </div>
-           
+
             <!-- 第三页 -->
-            <div class="swiper-slide three-slide">
+            <div class="swiper-slide swiper_layout three-slide">
                 <div class="three-slide-box">
                     <img class="logo_bg" src="assets/imgs/one-swiper/logo_bg_title.png" alt="">
 
@@ -193,7 +252,7 @@
                 </div>
             </div>
             <!-- 第四页 -->
-            <div class="swiper-slide four-slide">
+            <div class="swiper-slide swiper_layout four-slide">
                 <div class="four-slide-box">
                     <img class="logo_bg" src="assets/imgs/one-swiper/logo_bg_title.png" alt="">
                     <div class="title">
@@ -246,6 +305,13 @@
                                 <p><span>2.1</span> 万项专利</p>
                             </li>
                         </ul>
+
+                        <!-- 滑动提示 -->
+                        <section class="glide_hint">
+                            <img src="assets/imgs/two-swiper/scroll_title.png" alt="">
+                            <img src="assets/imgs/two-swiper/scroll_line.png" alt="">
+                            <img src="assets/imgs/two-swiper/scroll_h.png" alt="">
+                        </section>
                     </div>
                     <div class="hint ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.7s">下滑查看更多
                     </div>
@@ -259,9 +325,10 @@
                         <img src="assets/imgs/one-swiper/left_slide.png" alt="">
                     </div>
                 </div>
+                
             </div>
             <!-- 第五页 -->
-            <div class="swiper-slide five-slide">
+            <div class="swiper-slide swiper_layout five-slide">
                 <div class="five-slide-box">
                     <img class="logo_bg" src="assets/imgs/one-swiper/logo_bg_title.png" alt="">
                     <div class="title">
@@ -290,10 +357,16 @@
                         <img src="assets/imgs/one-swiper/left_slide.png" alt="">
                     </div>
                 </div>
-
+                <!-- 滑动提示 -->
+                <!-- 滑动提示 --> 
+                <section class="glide_hint ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay=".5s">
+                    <img src="assets/imgs/two-swiper/scroll_title.png" alt="">
+                    <img src="assets/imgs/two-swiper/scroll_line.png" alt="">
+                    <img src="assets/imgs/two-swiper/scroll_h.png" alt="">
+                </section>
             </div>
             <!-- 第六页 -->
-            <div class="swiper-slide six-slide">
+            <div class="swiper-slide swiper_layout six-slide">
                 <div class="six-swiper-box">
                     <img class="logo_bg" src="assets/imgs/six-swiper/logo_bg_title.png" alt="">
                     <div class="title">
@@ -333,21 +406,29 @@
                         <img src="assets/imgs/one-swiper/left_slide.png" alt="">
                     </div>
                 </div>
+                <!-- 滑动提示 -->
+                <section class="glide_hint">
+                    <img src="assets/imgs/two-swiper/scroll_title.png" alt="">
+                    <img src="assets/imgs/two-swiper/scroll_line.png" alt="">
+                    <img src="assets/imgs/two-swiper/scroll_h.png" alt="">
+                </section>
             </div>
             <!-- 第七页 -->
-            <div class="swiper-slide seven-slide">
+            <div class="swiper-slide swiper_layout seven-slide">
                 <div class="seven-slide-box">
                     <img class="logo_bg" src="assets/imgs/six-swiper/logo_bg_title.png" alt="">
                     <div class="title">
                         <img  src="assets/imgs/seven-swiper/title.png" alt="">
                     </div>
                     <!-- 产品创新切换 -->
-                    <div class="innovation ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+                    <div class="innovation">
                         <div class="innovation_box innovation_box_01">
+                            <img src="assets/imgs/seven-swiper/innovation_bg_01.png" alt="">
                             <img src="assets/imgs/seven-swiper/innovation_banner_01.png" alt="">
                             <img src="assets/imgs/seven-swiper/innovation_banner_03.png" alt="">
                         </div>
                         <div class="innovation_box innovation_box_02">
+                            <img src="assets/imgs/seven-swiper/innovation_bg_02.png" alt="">
                             <img src="assets/imgs/seven-swiper/innovation_banner_02.png" alt="">
                             <img src="assets/imgs/seven-swiper/innovation_banner_04.png" alt="">
                         </div>
@@ -360,84 +441,33 @@
                         <img src="assets/imgs/one-swiper/left_slide.png" alt="">
                     </div>
                 </div>
+                <!-- 滑动提示 -->
+                <section class="glide_hint ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                    <img src="assets/imgs/two-swiper/scroll_title.png" alt="">
+                    <img src="assets/imgs/two-swiper/scroll_line.png" alt="">
+                    <img src="assets/imgs/two-swiper/scroll_h.png" alt="">
+                </section>
             </div>
             <!-- 第八页 -->
-            <div class="swiper-slide eight-slide">
+            <div class="swiper-slide swiper_layout eight-slide">
                 <div class="layout_slide">
                     <img class="logo_bg" src="assets/imgs/eight-swiper/logo_bg_title.png" alt="">
                     <div class="title">
                         <img  src="assets/imgs/eight-swiper/title.png" alt="">
-                    </div>
-                    <div class="icon_box">
-                        <img class="ani" swiper-animate-effect="fadeInLeft"
-                            swiper-animate-duration="1s" swiper-animate-delay="0.3s" src="assets/imgs/eight-swiper/icon_01.png" alt="">
-                        <img class="ani" swiper-animate-effect="fadeInRight"
-                            swiper-animate-duration="1s" swiper-animate-delay="0.3s" src="assets/imgs/eight-swiper/icon_02.png" alt="">
-                    </div>
+                    </div> 
                     <div class="content ani" swiper-animate-effect="fadeIn"
                             swiper-animate-duration="1s" swiper-animate-delay=".7s">
-                        <div class="caption">
-                            <p>使 <i></i> 命</p>
-                            <p>
-                                <span>波士顿科学</span>
-                                <i></i>
-                                <span>为生命创新</span>
-                            </p>
-                        </div>
-                        <div class="desc">
-                            <p>愿景描述</p>
-                            <p>
-                                波士顿科学致力成为一家贴近医患需求，具有创新活力以及令人
-                                尊重的医疗科技公司。 <br>
-                                我们整合全球资源，深耕土本，携手并赋能合作伙伴，共建健康医疗生态圈，
-                                我们怀揣关爱之心，提供高效，优质，适宜的医疗解决方案，提升患者的生命质量。 <br>
-                                我们秉承“创业创新”的企业文化，吸引并培育优秀人才，成就个人价值，我们履行企业责任，
-                                持续回馈社会，为人类健康福祉而奋斗。
-                            </p>
-                        </div>
-                        <div class="strategy">
-                            <div class="strategy_title">
-                                <p>战 <i></i> 略</p>
-                                <p>
-                                    <span>加速创新转换</span>
-                                    <span>增加市场覆盖</span>
-                                    <span>拓展内外合作</span>
-                                </p>
-                            </div>
-                            <ul>
-                                <li>
-                                    <i></i>
-                                    <span>1</span>
-                                    <p>战略支柱</p>
-                                    <p>树立领域 领导地位</p>
-                                </li>
-                                <li>
-                                    <i></i>
-                                    <span>2</span>
-                                    <p>战略支柱</p>
-                                    <p>创新商业模式</p>
-                                </li>
-                                <li>
-                                    <i></i>
-                                    <span>3</span>
-                                    <p>战略支柱</p>
-                                    <p>拓展本土化业务</p>
-                                </li>
-                                <li>
-                                    <i></i>
-                                    <span>4</span>
-                                    <p>战略支柱</p>
-                                    <p>强化组织与文化建设</p>
-                                </li>
-                            </ul>
-                            <div class="culture">
-                                <img src="assets/imgs/eight-swiper/i_05.png" alt="">
-                            </div>
-                        </div>
+                        <img src="assets/imgs/eight-swiper/content_banner.png" alt="">
 
                     </div>
                     <div class="photo">
-                        <img src="assets/imgs/eight-swiper/photo.png" alt="">
+                        <img src="assets/imgs/eight-swiper/photo_01.png" alt="">
+                        <img src="assets/imgs/eight-swiper/photo_02.png" alt="">
+                        <img src="assets/imgs/eight-swiper/photo_03.png" alt="">
+                        <img src="assets/imgs/eight-swiper/photo_04.png" alt="">
+                        <img src="assets/imgs/eight-swiper/photo_05.png" alt="">
+                        <img src="assets/imgs/eight-swiper/photo_06.png" alt="">
+                        <img src="assets/imgs/eight-swiper/photo_07.png" alt="">
                     </div>
                     <div class="next">
                         <img src="assets/imgs/one-swiper/left_slide.png" alt="">
@@ -447,9 +477,15 @@
                             swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                     <p>查看完整内容</p>
                 </div>
+                <!-- 滑动提示 -->
+                <section class="glide_hint">
+                    <img src="assets/imgs/two-swiper/scroll_title.png" alt="">
+                    <img src="assets/imgs/two-swiper/scroll_line.png" alt="">
+                    <img src="assets/imgs/two-swiper/scroll_h.png" alt="">
+                </section>
             </div>
             <!-- 第九页 -->
-            <div class="swiper-slide nine-slide">
+            <div class="swiper-slide swiper_layout nine-slide">
                 <div class="nine-slide-box">
                     <img class="logo_bg" src="assets/imgs/six-swiper/logo_bg_title.png" alt="">
                     <div class="title">
@@ -486,9 +522,15 @@
                         <img src="assets/imgs/one-swiper/left_slide.png" alt="">
                     </div>
                 </div>
+                <!-- 滑动提示 -->
+                <section class="glide_hint">
+                    <img src="assets/imgs/two-swiper/scroll_title.png" alt="">
+                    <img src="assets/imgs/two-swiper/scroll_line.png" alt="">
+                    <img src="assets/imgs/two-swiper/scroll_h.png" alt="">
+                </section>
             </div>
             <!-- 第十页 -->
-            <div class="swiper-slide ten-slide">
+            <div class="swiper-slide swiper_layout ten-slide">
                 <img class="logo_bg" src="assets/imgs/six-swiper/logo_bg_title.png" alt="">
                 <div class="title">
                     <img src="assets/imgs/ten-swiper/title.png" alt="" >
@@ -602,6 +644,7 @@
                                 <img class="banner_title" src="assets/imgs/ten-swiper/banner_titile_16.png" alt="">
                             </div>
                         </div>
+                        <div class="swiper-slide"></div>
                     </div>
                 </div>
                 <div class="hint_swiper ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="1s">
@@ -612,7 +655,7 @@
                 </div>
             </div>
             <!-- 第十一页 -->
-            <div class="swiper-slide eleven-slide">
+            <div class="swiper-slide swiper_layout eleven-slide">
                 <div class="layout_swiper">
                     <img class="logo_bg" src="assets/imgs/eight-swiper/logo_bg_title.png" alt="">
                     <div class="title">
@@ -625,16 +668,28 @@
                         <div  class="ani" swiper-animate-effect="fadeIn"
                         swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                             创新培训学院与创新中心于2013年在上海投入运营。2018年，作为与清华大学技术转移研究院战略合作的一部分，北京创新培训学院正式落成。2020年，成都创新培训学院揭幕，让创新的产品与术式更好地深入广阔的中西部地区。 <br>
-                            作为公司专业教育和培训平台，创新培训学院配备了先进的硬件设施，培训内容涵盖了波士顿科学在华的核心业务领域，帮助中国医务工作者把握最新趋势、掌握前沿技术应用。此外，学院还与各大知名医学院合作，面向优秀学生开展各类临床课程，致力推进中国医疗行业的人才储备，造福更多病患。
+                            作为公司专业教育和培训平台，创新培训学院配备了先进的硬件设施，结合EDUCARE多样化的专业培训课程 ,培训内容涵盖了波士顿科学在华的核心业务领域，帮助中国医务工作者把握最新趋势、掌握前沿技术应用。此外，学院还与各大知名医学院合作，面向优秀学生开展各类临床课程，致力推进中国医疗行业的人才储备，造福更多病患。
+                        </div>
+                        <div class="educare ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                            <div> <span>深入了解 EDUCARE</span> </div>
                         </div>
                     </div>
                     <div class="content_video ani" swiper-animate-effect="fadeIn"
                         swiper-animate-duration="1s" swiper-animate-delay="0.7s">
-                        <div>
-                            <video src=""></video>
-                            <video src=""></video>
+                        <div class="video_mp">
+                            <video poster="assets/imgs/video/ias_img_02.png" controls>
+                                <source src="assets/imgs/video/ias_02.mp4" type="video/mp4">
+                                <source src="assets/imgs/video/ias_02.mp4" type="video/ogg">
+                                您的浏览器不支持 HTML5 video 标签。
+                            </video>
+                            <video poster="assets/imgs/video/ias_img_01.png" controls>
+                                <source src="assets/imgs/video/ias_01.mp4" type="video/mp4">
+                                <source src="assets/imgs/video/ias_01.mp4" type="video/ogg">
+                                您的浏览器不支持 HTML5 video 标签。
+                            </video>
+                            
                         </div>
-                        <div>
+                        <div class="video_select">
                             <span class="active">IAS宣传片</span>
                             <span>成都IAS宣传片</span>
                         </div>
@@ -652,16 +707,14 @@
                             <span>成都IAS</span>
                         </p>
                     </div>
-                    <div class="educare">
-                        <div> <span>深入了解 EDUCARE</span> </div>
-                    </div>
+
                     <div class="next">
                         <img src="assets/imgs/one-swiper/left_slide.png" alt="">
                     </div>
                 </div>
             </div>
             <!-- 第十二页 ，此页是后面添加，以下页屏（文件夹）类推加1-->
-            <div class="swiper-slide eleven-slide-append">
+            <div class="swiper-slide swiper_layout eleven-slide-append">
                 <div class="layout_swiper">
                     <img class="logo_bg" src="assets/imgs/eight-swiper/logo_bg_title.png" alt="">
                     <div class="title">
@@ -684,7 +737,7 @@
                     <div class="content_desc ani" swiper-animate-effect="fadeIn"
                     swiper-animate-duration="1s" swiper-animate-delay="1s">
                         <div>
-                            2015年，波士顿科学推出EDUCARE全球专业教育整体品牌，将创新医疗技术、专业教育以及关爱患者的初衷有机结合。
+                            2015年，波士顿科学推出EDUCARE全球专业教育整体品牌，将创新医疗技术、专业教育以及关爱患者的初衷有机结合。 <br>
                             EDUCARE通过优质的课程内容、全面的学科领域、一流的学习环境和世界级的培训设施，帮助医务工作者掌握前沿医疗技术，支持本土医疗行业整体水平提升。波士顿科学各专业领域将陆续推出专业教育品牌，依托行业力量，致力于成为医护人员最值得信赖的继续教育合作伙伴。
                         </div>
                     </div>
@@ -694,28 +747,25 @@
                 </div>
             </div>
             <!-- 第十三页 -->
-            <div class="swiper-slide twelve-slide">
+            <div class="swiper-slide swiper_layout twelve-slide">
                 <div class="layout_slide">
                     <img class="logo_bg" src="assets/imgs/eight-swiper/logo_bg_title.png" alt="">
                     <div class="title">
                         <img  src="assets/imgs/twelve-swiper/title.png" alt="">
                     </div>
-                    <div class="content_01 ani" swiper-animate-effect="fadeIn" 
+                    <div class="content_01 ani" swiper-animate-effect="fadeIn"
                         swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <div class="img_animated_box active">
-                            <img class="ani" swiper-animate-effect="fadeIn" 
-                            swiper-animate-duration="1s" swiper-animate-delay="0.3s" src="assets/imgs/twelve-swiper/icon_01.png" alt="">  
-                            <img src="assets/imgs/twelve-swiper/icon_02.png" alt="">  
-                            <img src="assets/imgs/twelve-swiper/icon_03.png" alt="">  
+                            <img class="ani" swiper-animate-effect="fadeIn"
+                            swiper-animate-duration="1s" swiper-animate-delay="0.3s" src="assets/imgs/twelve-swiper/icon_01.png" alt="">
+                            <img src="assets/imgs/twelve-swiper/icon_02.png" alt="">
+                            <img src="assets/imgs/twelve-swiper/icon_03.png" alt="">
                         </div>
-                        <div class="ani" swiper-animate-effect="fadeIn" 
+                        <div class="ani" swiper-animate-effect="fadeIn"
                         swiper-animate-duration="1s" swiper-animate-delay="0.7s">
-                            <p>兼容并剂 · 深耕本土 <i></i></p>
+                            <p>兼容并济 · 深耕本土 <i></i></p>
                             <p>
-                                在引入国际先进医疗器械研发体系和经验的同时，
-                                波士顿科学深入发掘基于本地需求的研发潜力，整合
-                                本地优质研发资源，并为医疗器械类产品在中国的研发
-                                和上市提供强有力的技术支持。
+                                在引入国际先进医疗器械研发体系和经验的同时，波士顿科学深入发掘基于本地需求的研发潜力、整合本地优质研发资源，并为医疗器械类产品在中国的研发和上市提供强有力的技术支持。
                             </p>
                         </div>
                     </div>
@@ -723,22 +773,14 @@
                         <div>
                             <p>质量方针 <span>QUALITY POLICY</span></p>
                             <P>
-                                波士顿科学为患者提供优质，高性能的产品，
-                                通过不断提升与完善产品性能，努力将质量转化
-                                为波士顿科学立足行业的竞争优势。 <br>
-                                波士顿科学的每一位员工与我们为患者提供的服务质量
-                                息息相关，要求每位员工能够遵守相关法规要求，持续
-                                改进流程，优化运营效率，最大幅度地降低病患风险。
+                                波士顿科学为患者提供优质，高性能的产品，通过不断提升与完善产品性能，努力将质量转化为波士顿科学立足行业的竞争优势。 <br>
+                                波士顿科学的每一位员工与我们为患者提供的服务质量息息相关，要求每位员工能够遵守相关法规要求，持续改进流程，优化运营效率，最大幅度地降低病患风险。
                             </P>
                         </div>
                         <div>
-                            <p>研发中心 R&D CENTER</p>
+                            <p>研发中心 <span>R&D CENTER</span></p>
                             <p>
-                                波士顿科学中国研发中心成立于2010年，
-                                由近百位毕业于国内外知名院校，拥有丰富行业经验的技术专家
-                                组成，是一支具有国际视野的一流团队，通过与公司全球研发团队
-                                的紧密合作，共同开发出具有国际顶尖技术水平的医疗器械产品，包括
-                                心脏介入，节律管理，内窥镜介入，泌尿及盆底健康，神经调节等产品。
+                                波士顿科学中国研发中心成立于2010年，由近百位毕业于国内外知名院校，拥有丰富行业经验的技术专家组成，是一支具有国际视野的一流团队，通过与公司全球研发团队的紧密合作，共同开发出具有国际顶尖技术水平的医疗器械产品，包括心脏介入、节律管理、内窥镜介入、泌尿及盆底健康、神经调节等产品。
                             </p>
                         </div>
                     </div>
@@ -751,71 +793,52 @@
                     <p>查看完整内容</p>
                 </div>
             </div>
-            <!-- 第十四页 -->
-            <div class="swiper-slide thirteen-slide">
-                <div class="layout_slide">
-                    <img class="logo_bg" src="assets/imgs/six-swiper/logo_bg_title.png" alt="">
-                    <div class="title">
-                        <img  src="assets/imgs/thirteen-swiper/title.png" alt="">
-                    </div>
-                    <div class="banner_swiper ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
-                        <div class="banner_swiper_box swiper-container">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                  <img src="assets/imgs/thirteen-swiper/banner_01.png" alt="">
-                              </div>
-                              <div class="swiper-slide">
-                                <img src="assets/imgs/thirteen-swiper/banner_02.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="assets/imgs/thirteen-swiper/banner_01.png" alt="">
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".7s">
-                        <div>
-                            T<sup>3</sup>创造是清华技术转移研究院与波士顿
-                            科学共同创立的开放式创新平台，T<sup>3</sup>创库
-                            坐落于中关村东升国际创业园，该园为北京市政府牵头
-                            所成立的全球健康产业创新孵化的重点基地。 <br>
-                            Technology,Transformation,Think Tank是T<sup>3</sup>
-                            创库名字的由来，分别代表了融创、融变、融智。T<sup>3</sup>
-                            创库旨在打造一个开放、多元、融合的创新平台。在这里，
-                            我们将融汇先进科技与全球智慧，引领行业与商业的双重变革。
 
-                        </div>
-                    </div>
-                    <div class="next">
-                        <img src="assets/imgs/one-swiper/left_slide.png" alt="">
-                    </div>
-                </div>
-                <div class="mask ani" swiper-animate-effect="fadeIn"
-                            swiper-animate-duration="1s" swiper-animate-delay="0.3s">
-                    <p>查看完整内容</p>
-                </div>
-            </div>
             <!-- 第十五屏 -->
-            <div class="swiper-slide fourteen-slide">
+            <div class="swiper-slide swiper_layout fourteen-slide">
                 <img class="logo_bg" src="assets/imgs/six-swiper/logo_bg_title.png" alt="">
                 <div class="title">
                     <img  src="assets/imgs/fourteen-swiper/title.png" alt="">
                 </div>
-                <div class="content_box ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
-                    <div>
-                        <img src="assets/imgs/fourteen-swiper/top_01.png" alt="">
-                        <img src="assets/imgs/fourteen-swiper/content_01.png" alt="">
-                        <img src="assets/imgs/fourteen-swiper/bottom_01.png" alt="">
+                <div class="content_box " >
+                    <div class="one">
+                        <div>
+                            <img class="img ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.7s"  src="assets/imgs/fourteen-swiper/top_one_01.png" alt="">
+                            <img class="line ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s"  src="assets/imgs/fourteen-swiper/line_01.png" alt="">
+                        </div>
+                        <img class="content ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.2s" src="assets/imgs/fourteen-swiper/content_01.png" alt="">
+                        <div>
+                            <img class="img ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.7s"  src="assets/imgs/fourteen-swiper/bottom_one_01.png" alt="">
+                            <img class="line ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s"  src="assets/imgs/fourteen-swiper/line_02.png" alt="">
+                        </div>
                     </div>
-                    <div>
-                        <img src="assets/imgs/fourteen-swiper/top_02.png" alt="">
-                        <img src="assets/imgs/fourteen-swiper/content_02.png" alt="">
-                        <img src="assets/imgs/fourteen-swiper/bottom_02.png" alt="">
+                    <div class="two">
+                        <div>
+                            <img class="img ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.7s"   src="assets/imgs/fourteen-swiper/top_two_01.png" alt="">
+                            <img class="line ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s"  src="assets/imgs/fourteen-swiper/line_04.png" alt="">
+                        </div>
+                        <img class="content ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.2s" src="assets/imgs/fourteen-swiper/content_02.png" alt="">
+                        <div>
+                            <img class="img ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.7s"   src="assets/imgs/fourteen-swiper/bottom_two_01.png" alt="">
+                            <img class="line ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s"   src="assets/imgs/fourteen-swiper/line_03.png" alt="">
+                        </div>
                     </div>
-                    <div>
-                        <img src="assets/imgs/fourteen-swiper/top_03.png" alt="">
-                        <img src="assets/imgs/fourteen-swiper/content_03.png" alt="">
-                        <img src="assets/imgs/fourteen-swiper/bottom_03.png" alt="">
+                    <div class="three">
+                        <div>
+                            <section>
+                                <img class="img ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.7s"   src="assets/imgs/fourteen-swiper/top_three_01.png" alt="">
+                                <img class="line ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s"   src="assets/imgs/fourteen-swiper/line_02.png" alt="">
+                            </section>
+                            <section>
+                                <img class="img ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.7s"  src="assets/imgs/fourteen-swiper/top_three_02.png" alt="">
+                                <img class="line ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s"   src="assets/imgs/fourteen-swiper/line_01.png" alt="">
+                            </section>
+                        </div>
+                        <img class="content ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.2s" src="assets/imgs/fourteen-swiper/content_03.png" alt="">
+                        <div>
+                            <img class="img ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.7s"   src="assets/imgs/fourteen-swiper/bottom_three_01.png" alt="">
+                            <img class="line ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s"   src="assets/imgs/fourteen-swiper/line_06.png" alt="">
+                        </div>
                     </div>
                     <section class="more ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".7s">
                         <img class="more_img" src="assets/imgs/fourteen-swiper/more.png" alt="">
@@ -827,8 +850,54 @@
                     <img src="assets/imgs/one-swiper/left_slide.png" alt="">
                 </div>
             </div>
+            <!-- 第十四页 -->
+            <div class="swiper-slide swiper_layout thirteen-slide">
+                <div class="layout_slide">
+                    <img class="logo_bg" src="assets/imgs/six-swiper/logo_bg_title.png" alt="">
+                    <div class="title">
+                        <img src="assets/imgs/thirteen-swiper/title.png" alt="">
+                    </div>
+                    <div class="icon_animate">
+                        <img class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s"
+                            src="assets/imgs/thirteen-swiper/icon_01.png" alt="">
+                        <img class="ani" swiper-animate-effect="fadeInBottomLeft" swiper-animate-duration="1s"
+                            swiper-animate-delay="0.7s" src="assets/imgs/thirteen-swiper/icon_02.png" alt="">
+                        <img class="ani" swiper-animate-effect="fadeInTopLeft" swiper-animate-duration="1s"
+                            swiper-animate-delay="1s" src="assets/imgs/thirteen-swiper/icon_03.png" alt="">
+                        <img class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s"
+                            swiper-animate-delay="1.3s" src="assets/imgs/thirteen-swiper/icon_04.png" alt="">
+                    </div>
+                    <div class="banner_swiper ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.3s">
+                        <div class="banner_swiper_box swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/imgs/thirteen-swiper/banner_01.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/imgs/thirteen-swiper/banner_02.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/imgs/thirteen-swiper/banner_01.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s"
+                        swiper-animate-delay=".7s">
+                        <div>
+                            T<sup>3</sup>创造是清华技术转移研究院与波士顿科学共同创立的开放式创新平台，T<sup>3</sup>创库坐落于中关村东升国际创业园，该园为北京市政府牵头所成立的全球健康产业创新孵化的重点基地。 <br>
+                            Technology,Transformation,Think Tank是T<sup>3</sup>创库名字的由来，分别代表了融创、融变、融智。T<sup>3</sup>创库旨在打造一个开放、多元、融合的创新平台。在这里，我们将融汇先进科技与全球智慧，引领行业与商业的双重变革。
+
+                        </div>
+                    </div>
+                    <div class="next">
+                        <img src="assets/imgs/one-swiper/left_slide.png" alt="">
+                    </div>
+                </div>
+            </div>
             <!-- 第十六屏 -->
-            <div class="swiper-slide fifteen-slide">
+            <div class="swiper-slide swiper_layout fifteen-slide">
                 <img class="logo_bg" src="assets/imgs/eight-swiper/logo_bg_title.png" alt="">
                 <div class="title">
                     <img  src="assets/imgs/fifteen-swiper/title.png" alt="">
@@ -837,9 +906,8 @@
                     <span>人才发展</span>
                     <p>
                         波士顿科学相信“ <i>发展人才、增长业务</i> ”的人才理念。
-                        发展人才的核心是“识别高潜力人才”、“培育未来的领导者”。
-                        波士顿科学为各个阶段的员工提供多维度的人才发展计划，以及
-                        多渠道、多样化的学习培训平台。
+                        发展人才的核心是“识别高潜力人才”、“培育未来的领导者”。 <br>
+                        波士顿科学为各个阶段的员工提供多维度的人才发展计划，以及多渠道、多样化的学习培训平台。
                     </p>
                 </div>
                 <div class="next">
@@ -847,7 +915,7 @@
                 </div>
             </div>
             <!-- 第十七屏 内容在十六屏 -->
-            <div class="swiper-slide sixteen-slide">
+            <div class="swiper-slide swiper_layout sixteen-slide">
                 <img class="logo_bg" src="assets/imgs/eight-swiper/logo_bg_title.png" alt="">
                 <div class="title">
                     <img  src="assets/imgs/fifteen-swiper/title.png" alt="">
@@ -859,9 +927,7 @@
                 <div class="content ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
                     <span>人才发展</span>
                     <p>
-                        凭借在人才发展及企业文化等领域的创新
-                        实践和杰出表现，波士顿科学连续荣膺“2019
-                        中国杰出雇主”及“2020中国杰出雇主”认证。
+                        凭借在人才发展及企业文化等领域的创新实践和杰出表现，波士顿科学连续荣膺“2019中国杰出雇主”及“2020中国杰出雇主”认证。
                     </p>
                 </div>
                 <div class="next">
@@ -869,7 +935,7 @@
                 </div>
             </div>
             <!-- 第十八屏 内容在十六屏 -->
-            <div class="swiper-slide seventeen-slide">
+            <div class="swiper-slide swiper_layout seventeen-slide">
                 <img class="logo_bg" src="assets/imgs/eight-swiper/logo_bg_title.png" alt="">
                 <div class="title">
                     <img  src="assets/imgs/fifteen-swiper/title.png" alt="">
@@ -877,10 +943,7 @@
                 <div class="content  ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                     <span>员工凝聚</span>
                     <p>
-                        波士顿科学打造的“爱筑波家”系列员工活动，
-                        通过家庭日、团队建设、公益活动等，在工作
-                        之余提升内部凝聚力，平衡工作与生活，从而让员工
-                        以最好的状态投入到工作中。
+                        波士顿科学打造的“爱筑波家”系列员工活动，通过家庭日、团队建设、公益活动等，在工作之余提升内部凝聚力，平衡工作与生活，从而让员工以最好的状态投入到工作中。
                     </p>
                 </div>
                 <div class="next">
@@ -888,39 +951,32 @@
                 </div>
             </div>
             <!-- 第十九屏 -->
-            <div class="swiper-slide eighteen-slide">
+            <div class="swiper-slide swiper_layout eighteen-slide">
                 <img class="logo_bg" src="assets/imgs/eight-swiper/logo_bg_title.png" alt="">
                 <div class="title">
                     <img  src="assets/imgs/eighteen-swiper/title.png" alt="">
                 </div>
-                <section class="swiper-container box_header_banner ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="assets/imgs/eighteen-swiper/banner_01.png" alt="">
-                            <p>合规与道德</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/imgs/eighteen-swiper/banner_01.png" alt="">
-                            <p>合规与道德</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/imgs/eighteen-swiper/banner_01.png" alt="">
-                            <p>合规与道德</p>
-                        </div>
+                <section class="box_header_banner ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+                    <div>
+                        <img src="assets/imgs/eighteen-swiper/banner_01.png" alt="">
+                        <img src="assets/imgs/eighteen-swiper/banner_02.png" alt="">
+                        <img src="assets/imgs/eighteen-swiper/banner_03.png" alt="">
                     </div>
-                    <div class="swiper-pagination swiper-pagination_banner"></div>
                 </section>
                 <div class="hint_box ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay=".5s">
                     <img src="assets/imgs/eighteen-swiper/hint.png" alt="">
                 </div>
-                <section class="content_box ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                <section class="content_box ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay=".7s">
                     <div class="content_list">
                         <section>
                             <div>
                                 <img src="assets/imgs/eighteen-swiper/content_01.png" alt="">
                             </div>
                             <div>
+                                <p>健康科普</p>
                                 <img src="assets/imgs/eighteen-swiper/icon_01.png" alt="">
+                            </div>
+                            <div>
                                 <p>
                                     促进基层健康医疗科技，参与疾病科普共建，助力健康中国建设
                                 </p>
@@ -930,12 +986,15 @@
                     <div class="content_list">
                         <section>
                             <div>
-                                <img src="assets/imgs/eighteen-swiper/content_01.png" alt="">
+                                <img src="assets/imgs/eighteen-swiper/content_02.png" alt="">
                             </div>
                             <div>
-                                <img src="assets/imgs/eighteen-swiper/icon_01.png" alt="">
+                                <p>健康教育</p>
+                                <img src="assets/imgs/eighteen-swiper/icon_02.png" alt="">
+                            </div>
+                            <div>
                                 <p>
-                                    2促进基层健康医疗科技，参与疾病科普共建，助力健康中国建设
+                                    提升中国青年一代对医学科技的认知及对生命科学的热爱
                                 </p>
                             </div>
                         </section>
@@ -943,30 +1002,26 @@
                     <div class="content_list">
                         <section>
                             <div>
-                                <img src="assets/imgs/eighteen-swiper/content_01.png" alt="">
+                                <img src="assets/imgs/eighteen-swiper/content_03.png" alt="">
                             </div>
                             <div>
-                                <img src="assets/imgs/eighteen-swiper/icon_01.png" alt="">
+                                <p>健康援助</p>
+                                <img src="assets/imgs/eighteen-swiper/icon_03.png" alt="">
+                            </div>
+                            <div>
                                 <p>
-                                    3促进基层健康医疗科技，参与疾病科普共建，助力健康中国建设
+                                    为贫困群体提供精准健康帮扶，提供必要的医疗援助
                                 </p>
                             </div>
                         </section>
                     </div>
-                </section>
-                <section class="content_title ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1.3s">
-                    <ul>
-                        <li class="active">健康科普</li>
-                        <li>健康教育</li>
-                        <li>健康援助</li>
-                    </ul>
                 </section>
                 <div class="next">
                     <img src="assets/imgs/one-swiper/left_slide.png" alt="">
                 </div>
             </div>
             <!-- 第二十屏 -->
-            <div class="swiper-slide nineteen-slide">
+            <div class="swiper-slide swiper_layout nineteen-slide">
                 <img class="logo_bg" src="assets/imgs/eight-swiper/logo_bg_title.png" alt="">
                 <div class="title">
                     <img  src="assets/imgs/nineteen-swiper/title.png" alt="">
@@ -982,27 +1037,24 @@
                         <p>健康中国·行业创新企业</p>
                     </div>
                     <div>
-                        <p>全球百强创新机构</p>
-                        <p>福布斯全美具创新力领袖百强榜(CEO)</p>
-                        <p>盖伦奖(医学界的诺贝尔奖)</p>
-                        <p>美国医疗杰出设计奖</p>
-                        <p>爱迪生奖</p>
-                        <p>健康中国·行业创新企业</p>
+                        <p>《财富》500强（FORTUNE 500）公司</p>
+                        <p>《财富》杂志全球最受尊崇公司</p>
+                        <p>《福布斯》最佳多元文化雇主</p>
+                        <p>Glassdoor 2019最佳工作场所</p>
+                        <p>2019/2020 中国杰出雇主认证</p>
                     </div>
                     <div>
-                        <p>全球百强创新机构</p>
-                        <p>福布斯全美具创新力领袖百强榜(CEO)</p>
-                        <p>盖伦奖(医学界的诺贝尔奖)</p>
-                        <p>美国医疗杰出设计奖</p>
-                        <p>爱迪生奖</p>
-                        <p>健康中国·行业创新企业</p>
+                        <p>FTSE4 Good Index富时社会责任指数</p>
+                        <p>2019年度社会责任最具影响力品牌</p>
+                        <p>中国健康公益星-十大公益企业</p>
+                        <p>美国《福布斯》JUST 100强企业</p>
                     </div>
                 </section>
                 <section class="content_list ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay=".7s">
                     <ul>
-                        <li class="active">创新奖</li>
-                        <li>领导力奖</li>
-                        <li>CRS奖</li>
+                        <li class="active">创新</li>
+                        <li>领导力</li>
+                        <li>CSR</li>
                     </ul>
                 </section>
                 <section class="banner_box">
@@ -1028,20 +1080,17 @@
                 </div>
             </div>
             <!-- 第二十一屏 -->
-            <div class="swiper-slide twenty-slide">
+            <div class="swiper-slide swiper_layout twenty-slide">
                 <div class="layout_slide">
                     <img class="logo_bg" src="assets/imgs/eight-swiper/logo_bg_title.png" alt="">
                     <div class="title">
                         <img  src="assets/imgs/twenty-swiper/title.png" alt="">
                     </div>
-                    <section class="video_box">
-                        <video src=""></video>
-                    </section>
-                    <section class="content_box">
+                    <section class="content_box ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay=".7s">
                         <ul>
                             <li>
                                 <p>上海 <span>SHANGHAI</span></p>
-                                <p>上海市黄埔区蒙自路763号丰盛创建大厦31楼</p>
+                                <p>上海市黄浦区蒙自路763号丰盛创建大厦31楼</p>
                                 <p>邮编：200023</p>
                                 <p>电话：+86-21-6141 5959</p>
                                 <p>传真：+86-21-6141 5900</p>
@@ -1067,7 +1116,7 @@
                                 <p>传真：+852 2563 5276</p>
                             </li>
                             <li>
-                                <p>台北 <span>TAIBEI</span></p>
+                                <p>台北 <span>TAIPEI</span></p>
                                 <p>电话：+886 22653 9088</p>
                                 <p>传真：+886 22653 9066</p>
                             </li>
@@ -1076,31 +1125,15 @@
                     <section class="qr_code_box">
                         <div>
                             <img src="assets/imgs/twenty-swiper/logo_01.png" alt="">
-                            <p>点击大图 扫码关注官方微信</p>
-                            <img class="code" src="assets/imgs/twenty-swiper/qr_code_01.png" alt="">
-                        </div>
-                        <div>
-                            <img src="assets/imgs/twenty-swiper/logo_02.png" alt="">
-                            <p>点击大图 扫码关注官方微信</p>
                             <img class="code" src="assets/imgs/twenty-swiper/qr_code_01.png" alt="">
                         </div>
                     </section>
                     <section class="proclaim">
                         <p>
-                            声明：版权所有，非经我公司书面许可，
-                            任何单位和个人都不得擅自摘抄，复印本手册的
-                            部分或全部，并不得以任何形式传播。
+                            声明：版权所有，非经我公司书面许可，任何单位和个人都不得擅自摘抄，电子版手册的部分或全部，并不得以任何形式传播。
                         </p>
                         <img src="assets/imgs/twenty-swiper/thanks.png" alt="">
                     </section>
-                    <div class="shade">
-                        <img src="" alt="">
-                    </div>
-                </div>
-
-                <div class="mask ani" swiper-animate-effect="fadeIn"
-                            swiper-animate-duration="1s" swiper-animate-delay="0.3s">
-                    <p>查看完整内容</p>
                 </div>
             </div>
         </div>
@@ -1108,7 +1141,7 @@
     <script src="assets/plugins/jq/jquery.min.js"></script>
     <script src="assets/plugins/swiper/swiper.min.js"></script>
     <script src="assets/plugins/swiper/swiper.animate.min.js"></script>
-    <script src="assets/scripts/index.js"></script>
+    <script src="assets/scripts/index.js?time=20201031123"></script>
 </body>
 
 </html>
