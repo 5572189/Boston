@@ -1,0 +1,77 @@
+// Global
+// ==============================
+body, p, h1, h2, h3, ul, ol, dl, li, dt, dd, input {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+img {
+    border: none;
+    vertical-align: top;
+}
+
+a {
+	text-decoration: none;
+}
+i{
+	 font-style: initial;
+}
+input, select {
+	-webkit-appearance: none;
+	appearance: none;
+	outline: none;
+}
+
+html, body {
+	width: 100%;
+	min-height: 100%;
+	background-color: #f0f0f0;
+}
+
+html {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	font-family: 'Microsoft YaHei', Arial;
+}
+// 中文使用字体
+@font-face {
+	font-family: '兰亭粗黑GBK';
+	src: url('../fonts/兰亭粗黑GBK.TTF');
+}
+@font-face {
+	font-family: '兰亭纤黑GBK';
+	src: url('../fonts/兰亭纤黑GBK.TTF');
+}
+@font-face {
+	font-family: '兰亭细黑GBK-Mobil';
+	src: url('../fonts/兰亭细黑GBK-Mobil.TTF');
+}
+@font-face {
+	font-family: '兰亭细黑GBK';
+	src: url('../fonts/兰亭细黑GBK.TTF');
+}
+@font-face {
+	font-family: '兰亭黑GBK';
+	src: url('../fonts/兰亭黑GBK.TTF');
+}
+// 英文用DIN字体
+@font-face {
+	font-family: 'DIN-Black';
+	src: url('../fonts/DIN-Black.otf');
+}
+@font-face {
+	font-family: 'DIN-Bold';
+	src: url('../fonts/DIN-Bold.otf');
+}
+@font-face {
+	font-family: 'DIN-Light';
+	src: url('../fonts/DIN-Light.otf');
+}
+@font-face {
+	font-family: 'DIN-Medium';
+	src: url('../fonts/DIN-Medium.otf');
+}
