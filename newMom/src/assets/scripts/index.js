@@ -36,14 +36,16 @@ $(function(){
     // loading动画函数调用
     loading_fn(function(){
         $('.loading').fadeOut(500,function(){
-            $('.fingerprint_box').fadeIn(1000);
+            $('.click_title').fadeIn(1000);
         });
     });
     var mySwiper = "";
     // 指纹点击事件
-    $('.fingerprint_img').on('click', function () {
-        $('.fingerprint_box').fadeOut(500,function(){
-
+    $('.click_title').on('click', function () {
+        $('.loding_banner').fadeOut(500, function () {
+            $('.logo_banner_01').addClass('active');
+            $('.logo_banner_02').addClass('active');
+            $('.logo_banner_03').addClass('active');
             // 控制气泡移动
             $('.bubble_box img').addClass('on');
             // 气泡上方logo显示
@@ -53,7 +55,7 @@ $(function(){
             //下一页展示
             $('.one-slide').find('.next').delay(2000).fadeIn();
             // swiper 初始化
-            swiper_fn();
+            // swiper_fn();
         })
     })
     function swiper_fn(){
