@@ -214,6 +214,30 @@ body {
   animation-fill-mode: forwards;
 }
 
+.layout_swiper_box .one-slide .nav_06 {
+  position: absolute;
+  right: 1.573333rem;
+  top: 36%;
+  width: 2.52rem;
+  height: 0.493333rem;
+  opacity: 0;
+}
+
+.layout_swiper_box .one-slide .nav_06.active {
+  animation: nav_06 1s linear 3s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes nav_06 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes nav_05 {
   from {
     left: -100%;

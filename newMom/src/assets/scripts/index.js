@@ -48,7 +48,7 @@ $(function(){
             $('.logo_banner_03').removeClass('on').addClass('active');
 
             // 气泡上方logo显示
-            $('.nav_01 , .nav_02 , .nav_03 , .nav_04 , .nav_05').addClass('active');
+            $('.nav_01 , .nav_02 , .nav_03 , .nav_04 , .nav_05, .nav_06').addClass('active');
             //下一页展示
             $('.one-slide').find('.next').delay(2000).fadeIn();
             // swiper 初始化
