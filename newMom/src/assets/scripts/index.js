@@ -44,14 +44,11 @@ $(function(){
     $('.click_title').on('click', function () {
         $('.loding_banner').fadeOut(500, function () {
             $('.logo_banner_01').addClass('active');
-            $('.logo_banner_02').addClass('active');
-            $('.logo_banner_03').addClass('active');
-            // 控制气泡移动
-            $('.bubble_box img').addClass('on');
+            $('.logo_banner_02').removeClass('on').addClass('active');
+            $('.logo_banner_03').removeClass('on').addClass('active');
+
             // 气泡上方logo显示
-            $('.logo_bg_title').delay(2000).fadeIn();
-            //气泡中间文字显示
-            $('.bubble_title').delay(2000).fadeIn();
+            $('.nav_01 , .nav_02 , .nav_03 , .nav_04 , .nav_05').addClass('active');
             //下一页展示
             $('.one-slide').find('.next').delay(2000).fadeIn();
             // swiper 初始化
